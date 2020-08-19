@@ -1,16 +1,4096 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Coduri Boala</title>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Coduri boala</h1>
+        </div>
+    </div>
 
-<h1>Test</h1>
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group input-group-lg">
+                <input type="text" id="search" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+</svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <br/>
+    <div class="row">
+        <div class="col-12">
+            <table id="cod-boli" class="table table-striped">
+                <tr>
+                    <th>Cod</th>
+                    <th>Denumire</th>
+                </tr>
+                <tr>
+                    <td>000</td>
+                    <td>Nu este cazul</td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Holera</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Febra tifoida</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Febrele paratifoide</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Alte infectii cu salmonella (inf.si toxiinf. alim.)</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Shigelloza (dizenteria bacilara)</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Alte infectii intestinale bacteriene</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>Botulismul</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>Alte intoxicatii alimentare de origine bacteriana</td>
+                </tr>
+                <tr>
+                    <td>009</td>
+                    <td>Amibiaza</td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td>Giardiaza(lambliaza)</td>
+                </tr>
+                <tr>
+                    <td>011</td>
+                    <td>Alte boli intestinale prin protozoare</td>
+                </tr>
+                <tr>
+                    <td>012</td>
+                    <td>Alte infectii virale si intestinale,precizate</td>
+                </tr>
+                <tr>
+                    <td>013</td>
+                    <td>Diareea si gastroenterita (de natura infectioasa)</td>
+                </tr>
+                <tr>
+                    <td>014</td>
+                    <td>Tuberculoza aparatului respirator</td>
+                </tr>
+                <tr>
+                    <td>015</td>
+                    <td>Tuberculoza sistemului nervos</td>
+                </tr>
+                <tr>
+                    <td>016</td>
+                    <td>Tuberculoza altor organe</td>
+                </tr>
+                <tr>
+                    <td>017</td>
+                    <td>Tuberculoza miliara</td>
+                </tr>
+                <tr>
+                    <td>018</td>
+                    <td>Antraxul</td>
+                </tr>
+                <tr>
+                    <td>019</td>
+                    <td>Brucelloza</td>
+                </tr>
+                <tr>
+                    <td>020</td>
+                    <td>Leptospiroza</td>
+                </tr>
+                <tr>
+                    <td>021</td>
+                    <td>Alte antropo-zoonoze bacteriene</td>
+                </tr>
+                <tr>
+                    <td>022</td>
+                    <td>Lepra [Boala Hansen]</td>
+                </tr>
+                <tr>
+                    <td>023</td>
+                    <td>Tetanosul neonatorum</td>
+                </tr>
+                <tr>
+                    <td>024</td>
+                    <td>Tetanosul obstetrical</td>
+                </tr>
+                <tr>
+                    <td>025</td>
+                    <td>Alte forme de tetanos</td>
+                </tr>
+                <tr>
+                    <td>026</td>
+                    <td>Difteria</td>
+                </tr>
+                <tr>
+                    <td>027</td>
+                    <td>Tusea convulsiva</td>
+                </tr>
+                <tr>
+                    <td>028</td>
+                    <td>Scarlatina</td>
+                </tr>
+                <tr>
+                    <td>029</td>
+                    <td>Infectia cu meningococi</td>
+                </tr>
+                <tr>
+                    <td>030</td>
+                    <td>Erizipelul</td>
+                </tr>
+                <tr>
+                    <td>031</td>
+                    <td>Alte boli bacteriene neclasate la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>032</td>
+                    <td>Sifilisul congenital</td>
+                </tr>
+                <tr>
+                    <td>033</td>
+                    <td>Sifilisul recent (primar,secundar)</td>
+                </tr>
+                <tr>
+                    <td>034</td>
+                    <td>Sifilisul tardiv</td>
+                </tr>
+                <tr>
+                    <td>035</td>
+                    <td>Alte forme de sifilis,fara precizare</td>
+                </tr>
+                <tr>
+                    <td>036</td>
+                    <td>Infectia gonococica</td>
+                </tr>
+                <tr>
+                    <td>037</td>
+                    <td>Sancrul moale</td>
+                </tr>
+                <tr>
+                    <td>038</td>
+                    <td>Trichomoniaza</td>
+                </tr>
+                <tr>
+                    <td>039</td>
+                    <td>Alte boli cu transmitere<span style='mso-spacerun:yes'>
+  </span>sexuala
+                    </td>
+                </tr>
+                <tr>
+                    <td>040</td>
+                    <td>Trahomul</td>
+                </tr>
+                <tr>
+                    <td>041</td>
+                    <td>Alte boli prin Chlamydia</td>
+                </tr>
+                <tr>
+                    <td>042</td>
+                    <td>Tifosul exantematic</td>
+                </tr>
+                <tr>
+                    <td>043</td>
+                    <td>Tifosul recrudescent[boala Brill]</td>
+                </tr>
+                <tr>
+                    <td>044</td>
+                    <td>Alte rickettsioze</td>
+                </tr>
+                <tr>
+                    <td>045</td>
+                    <td>Poliomielita acuta</td>
+                </tr>
+                <tr>
+                    <td>046</td>
+                    <td>Rabia</td>
+                </tr>
+                <tr>
+                    <td>047</td>
+                    <td>Encefalita si meningita virala</td>
+                </tr>
+                <tr>
+                    <td>048</td>
+                    <td>Alte infectii virale ale sistemului nervos</td>
+                </tr>
+                <tr>
+                    <td>049</td>
+                    <td>Varicela</td>
+                </tr>
+                <tr>
+                    <td>050</td>
+                    <td>Zona [herpes zoster]</td>
+                </tr>
+                <tr>
+                    <td>051</td>
+                    <td>Rugeola</td>
+                </tr>
+                <tr>
+                    <td>052</td>
+                    <td>Rubeola</td>
+                </tr>
+                <tr>
+                    <td>053</td>
+                    <td>Alte infectii virale cu leziuni cutaneo-mucoase</td>
+                </tr>
+                <tr>
+                    <td>054</td>
+                    <td>Hepatita virala acuta A</td>
+                </tr>
+                <tr>
+                    <td>055</td>
+                    <td>Hepatita virala acuta B</td>
+                </tr>
+                <tr>
+                    <td>056</td>
+                    <td>Alte hepatite virale acute</td>
+                </tr>
+                <tr>
+                    <td>057</td>
+                    <td>VIH cu unele boli infectioase si parazitare</td>
+                </tr>
+                <tr>
+                    <td>058</td>
+                    <td>VIH cu tumori maligne</td>
+                </tr>
+                <tr>
+                    <td>059</td>
+                    <td>VIH cu alte boli specificate</td>
+                </tr>
+                <tr>
+                    <td>060</td>
+                    <td>VIH in alte afectiuni</td>
+                </tr>
+                <tr>
+                    <td>061</td>
+                    <td>VIH fara precizare</td>
+                </tr>
+                <tr>
+                    <td>062</td>
+                    <td>Oreionul</td>
+                </tr>
+                <tr>
+                    <td>063</td>
+                    <td>Mononucleoza infectioasa</td>
+                </tr>
+                <tr>
+                    <td>064</td>
+                    <td>Alte boli cu virus,neclasate la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>065</td>
+                    <td>Dermatofitoze</td>
+                </tr>
+                <tr>
+                    <td>066</td>
+                    <td>Candidiaza</td>
+                </tr>
+                <tr>
+                    <td>067</td>
+                    <td>Alte micoze</td>
+                </tr>
+                <tr>
+                    <td>068</td>
+                    <td>Malaria</td>
+                </tr>
+                <tr>
+                    <td>069</td>
+                    <td>Toxoplasmoza</td>
+                </tr>
+                <tr>
+                    <td>070</td>
+                    <td>Alte boli prin protozoare</td>
+                </tr>
+                <tr>
+                    <td>071</td>
+                    <td>Echinococoza</td>
+                </tr>
+                <tr>
+                    <td>072</td>
+                    <td>Teniaza</td>
+                </tr>
+                <tr>
+                    <td>073</td>
+                    <td>Trichinelloza</td>
+                </tr>
+                <tr>
+                    <td>074</td>
+                    <td>Ascaridiaza</td>
+                </tr>
+                <tr>
+                    <td>075</td>
+                    <td>Oxiuriaza</td>
+                </tr>
+                <tr>
+                    <td>076</td>
+                    <td>Alte helmintiaze</td>
+                </tr>
+                <tr>
+                    <td>077</td>
+                    <td>Scabia</td>
+                </tr>
+                <tr>
+                    <td>078</td>
+                    <td>Alte infestatii</td>
+                </tr>
+                <tr>
+                    <td>079</td>
+                    <td>Boli infectioase,alte si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>080</td>
+                    <td>Tumora maligna a buzei</td>
+                </tr>
+                <tr>
+                    <td>081</td>
+                    <td>Tumora maligna a bazei limbii</td>
+                </tr>
+                <tr>
+                    <td>082</td>
+                    <td>Tumora maligna a limbii,alte si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>083</td>
+                    <td>Tumora maligna a gingiei</td>
+                </tr>
+                <tr>
+                    <td>084</td>
+                    <td>Tumora maligna a planseului gurii</td>
+                </tr>
+                <tr>
+                    <td>085</td>
+                    <td>Tumora maligna a palatului</td>
+                </tr>
+                <tr>
+                    <td>086</td>
+                    <td>Tumora maligna a gurii,alte si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>087</td>
+                    <td>Tumora maligna a glandei parotide</td>
+                </tr>
+                <tr>
+                    <td>088</td>
+                    <td>Tum mal a glandelor salivare<span style='mso-spacerun:yes'>
+  </span>fara precizare
+                    </td>
+                </tr>
+                <tr>
+                    <td>089</td>
+                    <td>Tumora maligna a amigdalei</td>
+                </tr>
+                <tr>
+                    <td>090</td>
+                    <td>Tumora maligna a orofaringelui</td>
+                </tr>
+                <tr>
+                    <td>091</td>
+                    <td>Tumora maligna a rinofaringelui</td>
+                </tr>
+                <tr>
+                    <td>092</td>
+                    <td>Tumora maligna a sinusului piriform</td>
+                </tr>
+                <tr>
+                    <td>093</td>
+                    <td>Tumora maligna a hipofaringelui</td>
+                </tr>
+                <tr>
+                    <td>094</td>
+                    <td>Tum mal a buzei,cav buc,faringe cu alte localiz</td>
+                </tr>
+                <tr>
+                    <td>095</td>
+                    <td>Tumori maligne ale esofagului</td>
+                </tr>
+                <tr>
+                    <td>096</td>
+                    <td>Tumori maligne ale stomacului</td>
+                </tr>
+                <tr>
+                    <td>097</td>
+                    <td>Tumora maligna a intestinului subtire</td>
+                </tr>
+                <tr>
+                    <td>098</td>
+                    <td>Tumora maligna a colonului</td>
+                </tr>
+                <tr>
+                    <td>099</td>
+                    <td>Tumora maligna a jonctiunii recto-sigmoidiene</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>Tumora maligna a rectului</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Tumora maligna a anusului si canalului anal</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Tum mal a ficatului si canalelor bil intrahep</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Tumora maligne a vezicii biliare</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Tumori maligne ale cailor biliare,alte si nepreciz</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Tumori maligne ale pancreasului</td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Tum mal org dig cu alta localizare si rau def</td>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Tum mal a foselor nazale si ale urechii medii</td>
+                </tr>
+                <tr>
+                    <td>108</td>
+                    <td>Tumora maligna a sinusurilor fetei</td>
+                </tr>
+                <tr>
+                    <td>109</td>
+                    <td>Tumori maligne ale laringelui</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Tumora maligna a traheei</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>Tumora maligna a bronhiilor si a pulmonului</td>
+                </tr>
+                <tr>
+                    <td>112</td>
+                    <td>Tumora maligna a timusului</td>
+                </tr>
+                <tr>
+                    <td>113</td>
+                    <td>Tumora maligna a inimii,mediastinului si pleurei</td>
+                </tr>
+                <tr>
+                    <td>114</td>
+                    <td>Tum mal a ap.resp, si a org.intratoracice,cu alte</td>
+                </tr>
+                <tr>
+                    <td>115</td>
+                    <td>Tum mal a oaselor si cartilagiilor<span
+                            style='mso-spacerun:yes'>  </span>membrelor
+                    </td>
+                </tr>
+                <tr>
+                    <td>116</td>
+                    <td>Tum mal ale oaselor si cartilagiilor<span
+                            style='mso-spacerun:yes'>  </span>alte localiz
+                    </td>
+                </tr>
+                <tr>
+                    <td>117</td>
+                    <td>Melanomul malign al pielii</td>
+                </tr>
+                <tr>
+                    <td>118</td>
+                    <td>Alte tumori maligne ale pielii</td>
+                </tr>
+                <tr>
+                    <td>119</td>
+                    <td>Mesotheliomul</td>
+                </tr>
+                <tr>
+                    <td>120</td>
+                    <td>Sarcomul Kaposi</td>
+                </tr>
+                <tr>
+                    <td>121</td>
+                    <td>Tum mal a nervilor periferici</td>
+                </tr>
+                <tr>
+                    <td>122</td>
+                    <td>Tum mal a retroperitoneului si peritoneului</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Tum mal a tesutului conjunctiv</td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td>Tumora maligna a sinului</td>
+                </tr>
+                <tr>
+                    <td>125</td>
+                    <td>Tumora maligna a vulvei</td>
+                </tr>
+                <tr>
+                    <td>126</td>
+                    <td>Tumora maligna a vaginului</td>
+                </tr>
+                <tr>
+                    <td>127</td>
+                    <td>Tumora maligna a colului uterin</td>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td>Tumora maligna a corpului uterin</td>
+                </tr>
+                <tr>
+                    <td>129</td>
+                    <td>Tumora maligna a uterului,localizare neprecizata</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>Tumora maligna a ovarului</td>
+                </tr>
+                <tr>
+                    <td>131</td>
+                    <td>Tum mal, org.genit.la femeie,alte si nepreciz</td>
+                </tr>
+                <tr>
+                    <td>132</td>
+                    <td>Tumora maligna a placentei</td>
+                </tr>
+                <tr>
+                    <td>133</td>
+                    <td>Tumora maligna a penisului</td>
+                </tr>
+                <tr>
+                    <td>134</td>
+                    <td>Tumora maligna a prostatei</td>
+                </tr>
+                <tr>
+                    <td>135</td>
+                    <td>Tumora maligna a testiculului</td>
+                </tr>
+                <tr>
+                    <td>136</td>
+                    <td>Tum mal.org.genit.la barbat,alte si nepreciz</td>
+                </tr>
+                <tr>
+                    <td>137</td>
+                    <td>Tum mal a rinichi.,cu exceptia bazinetului renal</td>
+                </tr>
+                <tr>
+                    <td>138</td>
+                    <td>Tumora maligna a bazinetului renal</td>
+                </tr>
+                <tr>
+                    <td>139</td>
+                    <td>Tumora maligna a ureterului</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td>Tumora maligna a vezicii urinare</td>
+                </tr>
+                <tr>
+                    <td>141</td>
+                    <td>Tum mal a organelor urinare,alte si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>142</td>
+                    <td>Tumora maligna a ochiului si anexelor sale</td>
+                </tr>
+                <tr>
+                    <td>143</td>
+                    <td>Tumora maligna a meningelui</td>
+                </tr>
+                <tr>
+                    <td>144</td>
+                    <td>Tumora maligna a creierului</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>Tum mal mad spinarii,a nerv.cran, alte parti snc</td>
+                </tr>
+                <tr>
+                    <td>146</td>
+                    <td>Tumora maligna a tiroidei</td>
+                </tr>
+                <tr>
+                    <td>147</td>
+                    <td>Tumora maligna a suprarenalei</td>
+                </tr>
+                <tr>
+                    <td>148</td>
+                    <td>Tumora maligna a altor glande endocrine</td>
+                </tr>
+                <tr>
+                    <td>149</td>
+                    <td>Tumora maligna cu alte localizari si nespecificate</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>Tum mal a ganglionilor limfatici,secundara si nepr</td>
+                </tr>
+                <tr>
+                    <td>151</td>
+                    <td>Tum mal secundara a org respiratorii si digestive</td>
+                </tr>
+                <tr>
+                    <td>152</td>
+                    <td>Tumora maligna secundara,cu alte localizari</td>
+                </tr>
+                <tr>
+                    <td>153</td>
+                    <td>Tumori maligne cu sediu neprecizat</td>
+                </tr>
+                <tr>
+                    <td>154</td>
+                    <td>Boala Hodkin</td>
+                </tr>
+                <tr>
+                    <td>155</td>
+                    <td>Limfom folicular (nodular) non-Hodkin</td>
+                </tr>
+                <tr>
+                    <td>156</td>
+                    <td>Limfom difuz non-Hodkin</td>
+                </tr>
+                <tr>
+                    <td>157</td>
+                    <td>Limfoame periferice si cutanate cu celule T</td>
+                </tr>
+                <tr>
+                    <td>158</td>
+                    <td>Limfon non-Hodkin, de alte tipuri si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>159</td>
+                    <td>Boli imunoproliferative maligne</td>
+                </tr>
+                <tr>
+                    <td>160</td>
+                    <td>Mielom multiplu si tumori maligne cu plasmocite</td>
+                </tr>
+                <tr>
+                    <td>161</td>
+                    <td>Leucemia limfoida</td>
+                </tr>
+                <tr>
+                    <td>162</td>
+                    <td>Leucemia mieloida</td>
+                </tr>
+                <tr>
+                    <td>163</td>
+                    <td>Leucemia monocitara</td>
+                </tr>
+                <tr>
+                    <td>164</td>
+                    <td>Alte leucemii cu celule precizate</td>
+                </tr>
+                <tr>
+                    <td>165</td>
+                    <td>Leucemia cu celule neprecizate</td>
+                </tr>
+                <tr>
+                    <td>166</td>
+                    <td>Tum mal ale tesut.limf,hematopoietic ,alte si nep</td>
+                </tr>
+                <tr>
+                    <td>167</td>
+                    <td>Tum mal cu loc. multiple independente (prim)</td>
+                </tr>
+                <tr>
+                    <td>168</td>
+                    <td>Carcinom in situ al cavit bucale, esofag,stomac</td>
+                </tr>
+                <tr>
+                    <td>169</td>
+                    <td>Carcinom in situ al org.digest,alte si nepreciz</td>
+                </tr>
+                <tr>
+                    <td>170</td>
+                    <td>Carcinom in situ al urechii mijl si<span
+                            style='mso-spacerun:yes'>  </span>ap.resp.
+                    </td>
+                </tr>
+                <tr>
+                    <td>171</td>
+                    <td>Melanom in situ</td>
+                </tr>
+                <tr>
+                    <td>172</td>
+                    <td>Carcinom in situ al pielii</td>
+                </tr>
+                <tr>
+                    <td>173</td>
+                    <td>Carcinom in situ al sinului</td>
+                </tr>
+                <tr>
+                    <td>174</td>
+                    <td>Carcinom in situ al colului uterin</td>
+                </tr>
+                <tr>
+                    <td>175</td>
+                    <td>Carcinom in situ al org genit, alte si neprec</td>
+                </tr>
+                <tr>
+                    <td>176</td>
+                    <td>Carcinom in situ cu alte localizari si neprec</td>
+                </tr>
+                <tr>
+                    <td>177</td>
+                    <td>Tum ben cu alte localiz si rau def ale ap digest</td>
+                </tr>
+                <tr>
+                    <td>178</td>
+                    <td>Tum ben a urechii mijlocii si a ap resp</td>
+                </tr>
+                <tr>
+                    <td>179</td>
+                    <td>Tum ben a org intratoracice, alte si neprec</td>
+                </tr>
+                <tr>
+                    <td>180</td>
+                    <td>Tum ben a osului si a cartilajului articular</td>
+                </tr>
+                <tr>
+                    <td>181</td>
+                    <td>Tumora lipomatoasa benigna</td>
+                </tr>
+                <tr>
+                    <td>182</td>
+                    <td>Hemangiom si limfamgiom, toate localizarile</td>
+                </tr>
+                <tr>
+                    <td>183</td>
+                    <td>Tumori benigne ale pielii</td>
+                </tr>
+                <tr>
+                    <td>184</td>
+                    <td>Tumora benigna a sinului</td>
+                </tr>
+                <tr>
+                    <td>185</td>
+                    <td>Leiomiomul uterului</td>
+                </tr>
+                <tr>
+                    <td>186</td>
+                    <td>Alte tumori benigne ale uterului</td>
+                </tr>
+                <tr>
+                    <td>187</td>
+                    <td>Tumora benigna a ovarului</td>
+                </tr>
+                <tr>
+                    <td>188</td>
+                    <td>Tum ben a org.genit., la femeie,alte si neprec</td>
+                </tr>
+                <tr>
+                    <td>189</td>
+                    <td>Tumora benigna a organelor urinare</td>
+                </tr>
+                <tr>
+                    <td>190</td>
+                    <td>Tum ben a creier. si altor portiuni ale snc</td>
+                </tr>
+                <tr>
+                    <td>191</td>
+                    <td>Tum ben a glandelor endocrine, alte si nepreciz</td>
+                </tr>
+                <tr>
+                    <td>192</td>
+                    <td>Tum ben cu alte localizari si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>193</td>
+                    <td>Tum cavit buc.si a org.dig.,cu evol.impreviz</td>
+                </tr>
+                <tr>
+                    <td>194</td>
+                    <td>Tum urechii mij,a org.resp,intrator,cu ev.imprev</td>
+                </tr>
+                <tr>
+                    <td>195</td>
+                    <td>Tum org.genit la femeie,cu evol.imprev. si nec.</td>
+                </tr>
+                <tr>
+                    <td>196</td>
+                    <td>Tum org.genit.la barbat, cu evol.imprev.si nec.</td>
+                </tr>
+                <tr>
+                    <td>197</td>
+                    <td>Tum org.urinare, cu evol.impreviz. si necunosc.</td>
+                </tr>
+                <tr>
+                    <td>198</td>
+                    <td>Tum creierului si a snc,cu evol.imprev. si nec.</td>
+                </tr>
+                <tr>
+                    <td>199</td>
+                    <td>Tum glande endocrine, cu evol.imprev. si nec.</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>Poliglobulia esentiala</td>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>Alte tum.de tesut limfoid,hemat,cu ev.imprev.</td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>Tum cu alte loc.si neprec,cu evol.imprev.</td>
+                </tr>
+                <tr>
+                    <td>203</td>
+                    <td>Anemia prin carenta de fier</td>
+                </tr>
+                <tr>
+                    <td>204</td>
+                    <td>Anemia prin carenta in vitamina B12</td>
+                </tr>
+                <tr>
+                    <td>205</td>
+                    <td>Anemia prin carenta in acid folic</td>
+                </tr>
+                <tr>
+                    <td>206</td>
+                    <td>Alte anemii de nutritie</td>
+                </tr>
+                <tr>
+                    <td>207</td>
+                    <td>Anemia datorita tulburarilor enzimatice</td>
+                </tr>
+                <tr>
+                    <td>208</td>
+                    <td>Thalassemia</td>
+                </tr>
+                <tr>
+                    <td>209</td>
+                    <td>Afectiuni cu hematii falciforme [drepanocitoze]</td>
+                </tr>
+                <tr>
+                    <td>210</td>
+                    <td>Alte anemii hemolitice ereditare</td>
+                </tr>
+                <tr>
+                    <td>211</td>
+                    <td>Anemia hemolitica dobindita</td>
+                </tr>
+                <tr>
+                    <td>212</td>
+                    <td>Aplazia medulara dobindita pura</td>
+                </tr>
+                <tr>
+                    <td>213</td>
+                    <td>Alte aplazii medulare</td>
+                </tr>
+                <tr>
+                    <td>214</td>
+                    <td>Anemia post-hemoragica acuta</td>
+                </tr>
+                <tr>
+                    <td>215</td>
+                    <td>Alte anemii</td>
+                </tr>
+                <tr>
+                    <td>216</td>
+                    <td>Coagularea intravasculara diseminata</td>
+                </tr>
+                <tr>
+                    <td>217</td>
+                    <td>Carenta ereditara in factorul VIII</td>
+                </tr>
+                <tr>
+                    <td>218</td>
+                    <td>Carenta ereditara in factorul IX</td>
+                </tr>
+                <tr>
+                    <td>219</td>
+                    <td>Alte anomalii de coagulare</td>
+                </tr>
+                <tr>
+                    <td>220</td>
+                    <td>Purpura si alte afectiuni hemoragice</td>
+                </tr>
+                <tr>
+                    <td>221</td>
+                    <td>Agranulocitoza</td>
+                </tr>
+                <tr>
+                    <td>222</td>
+                    <td>Tulb funct ale polinuclearelor neutrofile</td>
+                </tr>
+                <tr>
+                    <td>223</td>
+                    <td>Alte anomalii ale leucocitelor</td>
+                </tr>
+                <tr>
+                    <td>224</td>
+                    <td>Bolile splinei</td>
+                </tr>
+                <tr>
+                    <td>225</td>
+                    <td>Alte boli ale singelui si ale org hemato</td>
+                </tr>
+                <tr>
+                    <td>226</td>
+                    <td>Unele boli tesut limforet. si sist.reti.-histo</td>
+                </tr>
+                <tr>
+                    <td>227</td>
+                    <td>Imunodef. cu predominarea anomal.de anticorpi</td>
+                </tr>
+                <tr>
+                    <td>228</td>
+                    <td>Imunodeficiente combinate</td>
+                </tr>
+                <tr>
+                    <td>229</td>
+                    <td>Deficit imunitar asociat altor anomalii majore</td>
+                </tr>
+                <tr>
+                    <td>230</td>
+                    <td>Imunodeficienta comuna variabila</td>
+                </tr>
+                <tr>
+                    <td>231</td>
+                    <td>Alte imunodeficiente</td>
+                </tr>
+                <tr>
+                    <td>232</td>
+                    <td>Sarcoidoza</td>
+                </tr>
+                <tr>
+                    <td>233</td>
+                    <td>Alte tulb. sist. imunitar,neclasific.la alte loc</td>
+                </tr>
+                <tr>
+                    <td>234</td>
+                    <td>Sindromul insuficientei tiroide congenitale</td>
+                </tr>
+                <tr>
+                    <td>235</td>
+                    <td>Afect.tiroid.si inrudite, leg.de carenta in iod</td>
+                </tr>
+                <tr>
+                    <td>236</td>
+                    <td>Hipotiroidia prin carenta subclinica in iod</td>
+                </tr>
+                <tr>
+                    <td>237</td>
+                    <td>Alte guse netoxice</td>
+                </tr>
+                <tr>
+                    <td>238</td>
+                    <td>Tireotoxicoza [hipertiroidia]</td>
+                </tr>
+                <tr>
+                    <td>239</td>
+                    <td>Tiroidita</td>
+                </tr>
+                <tr>
+                    <td>240</td>
+                    <td>Alte afectiuni ale tiroidei</td>
+                </tr>
+                <tr>
+                    <td>241</td>
+                    <td>Diabetul zaharat insulino-dependent</td>
+                </tr>
+                <tr>
+                    <td>242</td>
+                    <td>Diabetul zaharat neinsulino-dependent</td>
+                </tr>
+                <tr>
+                    <td>243</td>
+                    <td>Diabetul zaharat de malnutritie</td>
+                </tr>
+                <tr>
+                    <td>244</td>
+                    <td>Alte forme de diabet zaharat</td>
+                </tr>
+                <tr>
+                    <td>245</td>
+                    <td>Diabet zaharat, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>246</td>
+                    <td>Coma hipoglicemica non-diabetica</td>
+                </tr>
+                <tr>
+                    <td>247</td>
+                    <td>Alte tulburari ale secretiei pancreatice interne</td>
+                </tr>
+                <tr>
+                    <td>248</td>
+                    <td>Hipoparatiroidia</td>
+                </tr>
+                <tr>
+                    <td>249</td>
+                    <td>Hiperparatiroid si alte boli ale gl paratiroide</td>
+                </tr>
+                <tr>
+                    <td>250</td>
+                    <td>Hipersecretia glandei hipofizare [pituitara]</td>
+                </tr>
+                <tr>
+                    <td>251</td>
+                    <td>Hiposecretia, alte tulburari ale glandei hipofiz</td>
+                </tr>
+                <tr>
+                    <td>252</td>
+                    <td>Sindromul Cushing</td>
+                </tr>
+                <tr>
+                    <td>253</td>
+                    <td>Tulburari adreno-genitale</td>
+                </tr>
+                <tr>
+                    <td>254</td>
+                    <td>Hiperaldosteronismul</td>
+                </tr>
+                <tr>
+                    <td>255</td>
+                    <td>Alte tulburari ale glandei suprarenale</td>
+                </tr>
+                <tr>
+                    <td>256</td>
+                    <td>Disfunctia ovariana</td>
+                </tr>
+                <tr>
+                    <td>257</td>
+                    <td>Disfunctia testiculara</td>
+                </tr>
+                <tr>
+                    <td>258</td>
+                    <td>Tulburarile pubertatii neclasate la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>259</td>
+                    <td>Disfunctiuni pluriglandulare</td>
+                </tr>
+                <tr>
+                    <td>260</td>
+                    <td>Bolile timusului</td>
+                </tr>
+                <tr>
+                    <td>261</td>
+                    <td>Alte tulburari endocrine</td>
+                </tr>
+                <tr>
+                    <td>262</td>
+                    <td>Malnutritia proteino-energ.grava fara precizare</td>
+                </tr>
+                <tr>
+                    <td>263</td>
+                    <td>Malnutritia proteino-energ.usoara sau moderata</td>
+                </tr>
+                <tr>
+                    <td>264</td>
+                    <td>Intirz de dezv.datorita malnutrit. proteino-energ</td>
+                </tr>
+                <tr>
+                    <td>265</td>
+                    <td>Malnutritia proteino-energetica, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>266</td>
+                    <td>Avitaminoza A</td>
+                </tr>
+                <tr>
+                    <td>267</td>
+                    <td>Carenta in tiamina</td>
+                </tr>
+                <tr>
+                    <td>268</td>
+                    <td>Carenta in acid nicotinic [pelagra]</td>
+                </tr>
+                <tr>
+                    <td>269</td>
+                    <td>Alte avitaminoze din grupa B</td>
+                </tr>
+                <tr>
+                    <td>270</td>
+                    <td>Carenta in acid ascorbic</td>
+                </tr>
+                <tr>
+                    <td>271</td>
+                    <td>Rahitismul evolutiv</td>
+                </tr>
+                <tr>
+                    <td>272</td>
+                    <td>Carenta in vitamina D, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>273</td>
+                    <td>Alte avitaminoze</td>
+                </tr>
+                <tr>
+                    <td>274</td>
+                    <td>Carenta alimentara in calciu</td>
+                </tr>
+                <tr>
+                    <td>275</td>
+                    <td>Carenta alimentara in seleniu</td>
+                </tr>
+                <tr>
+                    <td>276</td>
+                    <td>Carenta in zinc</td>
+                </tr>
+                <tr>
+                    <td>277</td>
+                    <td>Carenta in alte elemente nutritionale</td>
+                </tr>
+                <tr>
+                    <td>278</td>
+                    <td>Alte carente nutritionale</td>
+                </tr>
+                <tr>
+                    <td>279</td>
+                    <td>Obezitatea</td>
+                </tr>
+                <tr>
+                    <td>280</td>
+                    <td>Alte excese de aport</td>
+                </tr>
+                <tr>
+                    <td>281</td>
+                    <td>Fenilcetonuria clasica</td>
+                </tr>
+                <tr>
+                    <td>282</td>
+                    <td>Tulb. de metabolism al acizilor aminati aromat.</td>
+                </tr>
+                <tr>
+                    <td>283</td>
+                    <td>Alte tulb. de metabolism ale acizilor aminati</td>
+                </tr>
+                <tr>
+                    <td>284</td>
+                    <td>Intoleranta la lactoza</td>
+                </tr>
+                <tr>
+                    <td>285</td>
+                    <td>Alte tulb. de metabolism al hidratilor de carbon</td>
+                </tr>
+                <tr>
+                    <td>286</td>
+                    <td>Tulb. metabol al sfingolipide, lipide de rezerv</td>
+                </tr>
+                <tr>
+                    <td>287</td>
+                    <td>Tulburari de metabolism al glicosaminoglicani</td>
+                </tr>
+                <tr>
+                    <td>288</td>
+                    <td>Tulburari de metabolism al glicoproteinelor</td>
+                </tr>
+                <tr>
+                    <td>289</td>
+                    <td>Tulb de metabol al lipoproteine si alte lipide.</td>
+                </tr>
+                <tr>
+                    <td>290</td>
+                    <td>Tulb de metabol al purinelor si al pirimidinei</td>
+                </tr>
+                <tr>
+                    <td>291</td>
+                    <td>Tulb de metabolism al porfirinei si bilirubinei</td>
+                </tr>
+                <tr>
+                    <td>292</td>
+                    <td>Tulburari de metabolism al mineralelor</td>
+                </tr>
+                <tr>
+                    <td>293</td>
+                    <td>Fibroza chistica</td>
+                </tr>
+                <tr>
+                    <td>294</td>
+                    <td>Amiloidoza</td>
+                </tr>
+                <tr>
+                    <td>295</td>
+                    <td>Hipovolemia, deshitratara</td>
+                </tr>
+                <tr>
+                    <td>296</td>
+                    <td>Alte tulb de echi acido-bazic hidric si electro.</td>
+                </tr>
+                <tr>
+                    <td>297</td>
+                    <td>Alte tulburari de metabolism</td>
+                </tr>
+                <tr>
+                    <td>298</td>
+                    <td>Tulb.metab. si endocr.dupa o prest.med.</td>
+                </tr>
+                <tr>
+                    <td>299</td>
+                    <td>Dementa vasculara</td>
+                </tr>
+                <tr>
+                    <td>300</td>
+                    <td>Dementa fara precizare (presenila, senila)</td>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>Sindrom amnezic org,neind de alcool, subs psihoact</td>
+                </tr>
+                <tr>
+                    <td>302</td>
+                    <td>Delir, neindus de alcool si alte subst psihoactive</td>
+                </tr>
+                <tr>
+                    <td>303</td>
+                    <td>Alte tulb mentale dat.unei lez.cerebr.</td>
+                </tr>
+                <tr>
+                    <td>304</td>
+                    <td>Tulb personalit. si comportam.dat.unei afectiuni</td>
+                </tr>
+                <tr>
+                    <td>305</td>
+                    <td>Tulb mental.organica sau simptomatica, fara preciz</td>
+                </tr>
+                <tr>
+                    <td>306</td>
+                    <td>Tulb mental si comportament legate de consum alc.</td>
+                </tr>
+                <tr>
+                    <td>307</td>
+                    <td>Tulb.ment.de comp.leg.de consum.opiacee.,derivate</td>
+                </tr>
+                <tr>
+                    <td>308</td>
+                    <td>Tulb mental si de comp.legate de consum sedative</td>
+                </tr>
+                <tr>
+                    <td>309</td>
+                    <td>Tulb mentale si de comp.leg.de consum stimulente</td>
+                </tr>
+                <tr>
+                    <td>310</td>
+                    <td>Tulb mentale si de comp. legate de consum tutun</td>
+                </tr>
+                <tr>
+                    <td>311</td>
+                    <td>Tulb mentale, de comp. leg.de consum solv.volat</td>
+                </tr>
+                <tr>
+                    <td>312</td>
+                    <td>Schizofrenia</td>
+                </tr>
+                <tr>
+                    <td>313</td>
+                    <td>Tulburare schizotipica</td>
+                </tr>
+                <tr>
+                    <td>314</td>
+                    <td>Tulburari delirante persistente</td>
+                </tr>
+                <tr>
+                    <td>315</td>
+                    <td>Tulburari psihotice acute si tranzitorii</td>
+                </tr>
+                <tr>
+                    <td>316</td>
+                    <td>Tulburare deliranta indusa</td>
+                </tr>
+                <tr>
+                    <td>317</td>
+                    <td>Tulburari schizo-afective</td>
+                </tr>
+                <tr>
+                    <td>318</td>
+                    <td>Alte tulburari psihotice neorganice</td>
+                </tr>
+                <tr>
+                    <td>319</td>
+                    <td>Episod maniacal</td>
+                </tr>
+                <tr>
+                    <td>320</td>
+                    <td>Tuburare afectiva bipolara</td>
+                </tr>
+                <tr>
+                    <td>321</td>
+                    <td>Episod depresiv</td>
+                </tr>
+                <tr>
+                    <td>322</td>
+                    <td>Tulburari ale dispozitiei afectivitatii</td>
+                </tr>
+                <tr>
+                    <td>323</td>
+                    <td>Alte tulb ale dispozitiei afectivitatii</td>
+                </tr>
+                <tr>
+                    <td>324</td>
+                    <td>Tulb ale dispozitiei afectiv, fara FAI</td>
+                </tr>
+                <tr>
+                    <td>325</td>
+                    <td>Tulburari anxioase</td>
+                </tr>
+                <tr>
+                    <td>326</td>
+                    <td>Tulburare obsesionala-compulsiva</td>
+                </tr>
+                <tr>
+                    <td>327</td>
+                    <td>Reac la factor de stress imp,tulb adapt</td>
+                </tr>
+                <tr>
+                    <td>328</td>
+                    <td>Tulburari disociative [de conversie]</td>
+                </tr>
+                <tr>
+                    <td>329</td>
+                    <td>Tulburari somatice</td>
+                </tr>
+                <tr>
+                    <td>330</td>
+                    <td>Alte tulburari nevrotice</td>
+                </tr>
+                <tr>
+                    <td>331</td>
+                    <td>Tulburari de alimentatie</td>
+                </tr>
+                <tr>
+                    <td>332</td>
+                    <td>Tulburari de somn neorganice</td>
+                </tr>
+                <tr>
+                    <td>333</td>
+                    <td>Disfunc sex, nedat.unei tulb,boli org.</td>
+                </tr>
+                <tr>
+                    <td>334</td>
+                    <td>Tulb ment.si de comp.asoc cu puerperiu,FAI</td>
+                </tr>
+                <tr>
+                    <td>335</td>
+                    <td>Fact psih,comportament asoc boli, tulb.</td>
+                </tr>
+                <tr>
+                    <td>336</td>
+                    <td>Abuz de subst nedeterminind dependenta</td>
+                </tr>
+                <tr>
+                    <td>337</td>
+                    <td>Sindr comp nepreciz asoc perturb.fizio.</td>
+                </tr>
+                <tr>
+                    <td>338</td>
+                    <td>Tulb specifice ale personalitatii</td>
+                </tr>
+                <tr>
+                    <td>339</td>
+                    <td>Tulb de identitate sex, de prefer. sex</td>
+                </tr>
+                <tr>
+                    <td>340</td>
+                    <td>Pb psiholog si comp.asoc dezv. sexuale</td>
+                </tr>
+                <tr>
+                    <td>341</td>
+                    <td>Alte tulb ale pers., a comp la adult</td>
+                </tr>
+                <tr>
+                    <td>342</td>
+                    <td>Intirziere mentala usoara</td>
+                </tr>
+                <tr>
+                    <td>343</td>
+                    <td>Intirziere mentala medie</td>
+                </tr>
+                <tr>
+                    <td>344</td>
+                    <td>Intirziere mentala grava</td>
+                </tr>
+                <tr>
+                    <td>345</td>
+                    <td>Intirziere mentala profunda</td>
+                </tr>
+                <tr>
+                    <td>346</td>
+                    <td>Alte forme de intirz.mental., fara precizare</td>
+                </tr>
+                <tr>
+                    <td>347</td>
+                    <td>Tulb spec de dezv vorbirii si limbaj, achizitii</td>
+                </tr>
+                <tr>
+                    <td>348</td>
+                    <td>Tulburari specifice de dezvoltare motorie</td>
+                </tr>
+                <tr>
+                    <td>349</td>
+                    <td>Alte tulb ale dezv psih. si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>350</td>
+                    <td>Tulburari hiperchinetice</td>
+                </tr>
+                <tr>
+                    <td>351</td>
+                    <td>Tulburari de conduita</td>
+                </tr>
+                <tr>
+                    <td>352</td>
+                    <td>Tulb emot.cu aparitia in mod.spec in copilarie</td>
+                </tr>
+                <tr>
+                    <td>353</td>
+                    <td>Tulb ale func soc,cu aparitia spec.in copilarie</td>
+                </tr>
+                <tr>
+                    <td>354</td>
+                    <td>Alte tulb.de comp.,tulb.emotion. in per.copilarie</td>
+                </tr>
+                <tr>
+                    <td>355</td>
+                    <td>Tulburare mentala fara alte indicatii</td>
+                </tr>
+                <tr>
+                    <td>356</td>
+                    <td>Meningita bacteriana, neclasata la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>357</td>
+                    <td>Meningita datorita altor cauze si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>358</td>
+                    <td>Encefalita, mielita, encefalomielita</td>
+                </tr>
+                <tr>
+                    <td>359</td>
+                    <td>Abces si granulom intracranian si intrarahidian</td>
+                </tr>
+                <tr>
+                    <td>360</td>
+                    <td>Flebita,tromboflebita intracranian,intrarahidiana</td>
+                </tr>
+                <tr>
+                    <td>361</td>
+                    <td>Coreea Huntington</td>
+                </tr>
+                <tr>
+                    <td>362</td>
+                    <td>Ataxia ereditara</td>
+                </tr>
+                <tr>
+                    <td>363</td>
+                    <td>Amiotrofia spinala si sindroame inrudite</td>
+                </tr>
+                <tr>
+                    <td>364</td>
+                    <td>Boala Parkinson</td>
+                </tr>
+                <tr>
+                    <td>365</td>
+                    <td>Sindrom parkinsonian secundar</td>
+                </tr>
+                <tr>
+                    <td>366</td>
+                    <td>Alte boli degenerativ ale nucleilor centr cenusii</td>
+                </tr>
+                <tr>
+                    <td>367</td>
+                    <td>Alte sindr extrapiramid, tulburari de motricitate</td>
+                </tr>
+                <tr>
+                    <td>368</td>
+                    <td>Boala Alzheimer</td>
+                </tr>
+                <tr>
+                    <td>369</td>
+                    <td>Alte afect degenerative ale sist nervos, neclasat</td>
+                </tr>
+                <tr>
+                    <td>370</td>
+                    <td>Scleroza multipla</td>
+                </tr>
+                <tr>
+                    <td>371</td>
+                    <td>Alte afectuni demielinizante acute diseminate</td>
+                </tr>
+                <tr>
+                    <td>372</td>
+                    <td>Alte afect demielinizante ale sist nervos central</td>
+                </tr>
+                <tr>
+                    <td>373</td>
+                    <td>Epilepsia</td>
+                </tr>
+                <tr>
+                    <td>374</td>
+                    <td>Stare de rau epileptic</td>
+                </tr>
+                <tr>
+                    <td>375</td>
+                    <td>Sindroame de algii cefalice</td>
+                </tr>
+                <tr>
+                    <td>376</td>
+                    <td>Accid ischemice cerebr tranzit, sindroame inrudit</td>
+                </tr>
+                <tr>
+                    <td>377</td>
+                    <td>Tulburari de somn</td>
+                </tr>
+                <tr>
+                    <td>378</td>
+                    <td>Afectiunile nervilor cranieni</td>
+                </tr>
+                <tr>
+                    <td>379</td>
+                    <td>Afectiunile radacinilor si plexurilor nervoase</td>
+                </tr>
+                <tr>
+                    <td>380</td>
+                    <td>Mononevrite</td>
+                </tr>
+                <tr>
+                    <td>381</td>
+                    <td>Neuropatia ereditara si idiopatica</td>
+                </tr>
+                <tr>
+                    <td>382</td>
+                    <td>Polinevrite inflamatorii</td>
+                </tr>
+                <tr>
+                    <td>383</td>
+                    <td>Alte polinevrite</td>
+                </tr>
+                <tr>
+                    <td>384</td>
+                    <td>Alte afectiuni ale sistemului nervos periferic</td>
+                </tr>
+                <tr>
+                    <td>385</td>
+                    <td>Miastenia si alte afectiuni neuromusculare</td>
+                </tr>
+                <tr>
+                    <td>386</td>
+                    <td>Afect musc primitiv (Distrofia musc.Duchenne)</td>
+                </tr>
+                <tr>
+                    <td>387</td>
+                    <td>Alte afectiuni musculare</td>
+                </tr>
+                <tr>
+                    <td>388</td>
+                    <td>Paralizia cerebrala infantila</td>
+                </tr>
+                <tr>
+                    <td>389</td>
+                    <td>Hemiplegia</td>
+                </tr>
+                <tr>
+                    <td>390</td>
+                    <td>Paraplegia si tetraplegia</td>
+                </tr>
+                <tr>
+                    <td>391</td>
+                    <td>Alte sindroame paralitice</td>
+                </tr>
+                <tr>
+                    <td>392</td>
+                    <td>Afectiuni ale sistemului nervos autonom</td>
+                </tr>
+                <tr>
+                    <td>393</td>
+                    <td>Hidrocefalia</td>
+                </tr>
+                <tr>
+                    <td>394</td>
+                    <td>Encefalopat toxica si alte afect ale creier.</td>
+                </tr>
+                <tr>
+                    <td>395</td>
+                    <td>Alte afectiuni ale maduvei spinarii</td>
+                </tr>
+                <tr>
+                    <td>396</td>
+                    <td>Alte afectiuni ale sistemului nervos central</td>
+                </tr>
+                <tr>
+                    <td>397</td>
+                    <td>Afect. sist.nerv dupa un act medical</td>
+                </tr>
+                <tr>
+                    <td>398</td>
+                    <td>Orgelet si chalazion</td>
+                </tr>
+                <tr>
+                    <td>399</td>
+                    <td>Alte afectiuni ale pleoapei</td>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td>Afectiuni ale aparatului lacrimal</td>
+                </tr>
+                <tr>
+                    <td>401</td>
+                    <td>Afectiuni ale orbitei</td>
+                </tr>
+                <tr>
+                    <td>402</td>
+                    <td>Conjunctivita</td>
+                </tr>
+                <tr>
+                    <td>403</td>
+                    <td>Alte afectiuni ale conjunctivei</td>
+                </tr>
+                <tr>
+                    <td>404</td>
+                    <td>Afectiuni ale scleroticei</td>
+                </tr>
+                <tr>
+                    <td>405</td>
+                    <td>Cheratita</td>
+                </tr>
+                <tr>
+                    <td>406</td>
+                    <td>Cicatrice, opacit corneene,alte afect.cornee</td>
+                </tr>
+                <tr>
+                    <td>407</td>
+                    <td>Iridociclita</td>
+                </tr>
+                <tr>
+                    <td>408</td>
+                    <td>Alte afect. ale irisului si corpilor ciliari</td>
+                </tr>
+                <tr>
+                    <td>409</td>
+                    <td>Cataracta senila</td>
+                </tr>
+                <tr>
+                    <td>410</td>
+                    <td>Alte cataracte</td>
+                </tr>
+                <tr>
+                    <td>411</td>
+                    <td>Alte afectiuni ale cristalinului</td>
+                </tr>
+                <tr>
+                    <td>412</td>
+                    <td>Chorioretinita,alte afectiuni ale choroidei</td>
+                </tr>
+                <tr>
+                    <td>413</td>
+                    <td>Dezlipirea si ruptura retinei</td>
+                </tr>
+                <tr>
+                    <td>414</td>
+                    <td>Alte afectiuni retiniene</td>
+                </tr>
+                <tr>
+                    <td>415</td>
+                    <td>Glaucomul</td>
+                </tr>
+                <tr>
+                    <td>416</td>
+                    <td>Afectiuni ale corpului vitros</td>
+                </tr>
+                <tr>
+                    <td>417</td>
+                    <td>Afectiuni ale globului ocular</td>
+                </tr>
+                <tr>
+                    <td>418</td>
+                    <td>Nevrita optica</td>
+                </tr>
+                <tr>
+                    <td>419</td>
+                    <td>Alte afect. ale nervului si cailor optice</td>
+                </tr>
+                <tr>
+                    <td>420</td>
+                    <td>Strabism paralitic</td>
+                </tr>
+                <tr>
+                    <td>421</td>
+                    <td>Alte anomalii de miscare binoculara</td>
+                </tr>
+                <tr>
+                    <td>422</td>
+                    <td>Vicii de refractie si tulb de acomodare</td>
+                </tr>
+                <tr>
+                    <td>423</td>
+                    <td>Tulburari de vedere</td>
+                </tr>
+                <tr>
+                    <td>424</td>
+                    <td>Cecitatea si scaderea vazului</td>
+                </tr>
+                <tr>
+                    <td>425</td>
+                    <td>Nistagmus,alte miscari anormale ale ochi.</td>
+                </tr>
+                <tr>
+                    <td>426</td>
+                    <td>Alte afect. ale ochiului si anexelor sale</td>
+                </tr>
+                <tr>
+                    <td>427</td>
+                    <td>Afect.ale ochi si anexe sale dupa act med.</td>
+                </tr>
+                <tr>
+                    <td>428</td>
+                    <td>Otita externa</td>
+                </tr>
+                <tr>
+                    <td>429</td>
+                    <td>Alte afectiuni ale urechii externe</td>
+                </tr>
+                <tr>
+                    <td>430</td>
+                    <td>Otita medie nesupurata</td>
+                </tr>
+                <tr>
+                    <td>431</td>
+                    <td>Otita medie supurativa si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>432</td>
+                    <td>Inflamat, obstr, afect ale trompei Eustache</td>
+                </tr>
+                <tr>
+                    <td>433</td>
+                    <td>Mastoidita si afectiuni asociate</td>
+                </tr>
+                <tr>
+                    <td>434</td>
+                    <td>Colesteatomul urechii medii</td>
+                </tr>
+                <tr>
+                    <td>435</td>
+                    <td>Perforatia si alte afectiuni ale timpanului</td>
+                </tr>
+                <tr>
+                    <td>436</td>
+                    <td>Alte afect ale urechii med si apofiz mastoide</td>
+                </tr>
+                <tr>
+                    <td>437</td>
+                    <td>Otoscleroza</td>
+                </tr>
+                <tr>
+                    <td>438</td>
+                    <td>Afect func vestibulare si sindroame de vertij</td>
+                </tr>
+                <tr>
+                    <td>439</td>
+                    <td>Alte boli ale urechii interne</td>
+                </tr>
+                <tr>
+                    <td>440</td>
+                    <td>Surditate de transmisie si neurosenzoriala</td>
+                </tr>
+                <tr>
+                    <td>441</td>
+                    <td>Alte pierderi ale auzului si surdomutitatea</td>
+                </tr>
+                <tr>
+                    <td>442</td>
+                    <td>Otalgia si otoreea</td>
+                </tr>
+                <tr>
+                    <td>443</td>
+                    <td>Alte afect ale urechii, neclasat. alte locuri</td>
+                </tr>
+                <tr>
+                    <td>444</td>
+                    <td>Afect.dupa un act med.la niv.urech,apofiz.mast.</td>
+                </tr>
+                <tr>
+                    <td>445</td>
+                    <td>Reumatism articular acut fara complic cardiace</td>
+                </tr>
+                <tr>
+                    <td>446</td>
+                    <td>Reumatism articular acut cu complic cardiace</td>
+                </tr>
+                <tr>
+                    <td>447</td>
+                    <td>Coreea reumatismala</td>
+                </tr>
+                <tr>
+                    <td>448</td>
+                    <td>Boli ale valvulei mitrale, reumatismale</td>
+                </tr>
+                <tr>
+                    <td>449</td>
+                    <td>Boli ale valvulei aortice, reumatismale</td>
+                </tr>
+                <tr>
+                    <td>450</td>
+                    <td>Boli ale valvulei tricuspide, reumatismale</td>
+                </tr>
+                <tr>
+                    <td>451</td>
+                    <td>Boli multiple valvulare</td>
+                </tr>
+                <tr>
+                    <td>452</td>
+                    <td>Alte boli reumatice ale inimii</td>
+                </tr>
+                <tr>
+                    <td>453</td>
+                    <td>Hipertensiunea esentiala (primara)</td>
+                </tr>
+                <tr>
+                    <td>454</td>
+                    <td>Cardiopatia hipertensiva</td>
+                </tr>
+                <tr>
+                    <td>455</td>
+                    <td>Nefropatia hipertensiva</td>
+                </tr>
+                <tr>
+                    <td>456</td>
+                    <td>Cardio-nefropatia hipertensiva</td>
+                </tr>
+                <tr>
+                    <td>457</td>
+                    <td>Hipertensiunea secundara</td>
+                </tr>
+                <tr>
+                    <td>458</td>
+                    <td>Angina pectorala</td>
+                </tr>
+                <tr>
+                    <td>459</td>
+                    <td>Infarct miocardic acut</td>
+                </tr>
+                <tr>
+                    <td>460</td>
+                    <td>Infarct miocardic ulterior</td>
+                </tr>
+                <tr>
+                    <td>461</td>
+                    <td>Alte boli ischemice acute cardiace</td>
+                </tr>
+                <tr>
+                    <td>462</td>
+                    <td>Cardiopatia ischemica cronica</td>
+                </tr>
+                <tr>
+                    <td>463</td>
+                    <td>Embolia vaselor pulmonare</td>
+                </tr>
+                <tr>
+                    <td>464</td>
+                    <td>Alte cardiopatii pulmonare</td>
+                </tr>
+                <tr>
+                    <td>465</td>
+                    <td>Cord pulmonar cronic</td>
+                </tr>
+                <tr>
+                    <td>466</td>
+                    <td>Alte boli ale vaselor pulmonare</td>
+                </tr>
+                <tr>
+                    <td>467</td>
+                    <td>Pericardita acuta</td>
+                </tr>
+                <tr>
+                    <td>468</td>
+                    <td>Alte boli ale pericardului</td>
+                </tr>
+                <tr>
+                    <td>469</td>
+                    <td>Endocardita acuta si subacuta</td>
+                </tr>
+                <tr>
+                    <td>470</td>
+                    <td>Afectiuni nereumatice ale valvulei mitrale</td>
+                </tr>
+                <tr>
+                    <td>471</td>
+                    <td>Afectiuni nereumatice ale valvulei aortice</td>
+                </tr>
+                <tr>
+                    <td>472</td>
+                    <td>Afectiuni nereumatice ale valvulei tricuspide</td>
+                </tr>
+                <tr>
+                    <td>473</td>
+                    <td>Afectiunile valvulei pulmonare</td>
+                </tr>
+                <tr>
+                    <td>474</td>
+                    <td>Endocardita, valvula nespecificata</td>
+                </tr>
+                <tr>
+                    <td>475</td>
+                    <td>Miocardita acuta</td>
+                </tr>
+                <tr>
+                    <td>476</td>
+                    <td>Cardiomiopatia</td>
+                </tr>
+                <tr>
+                    <td>477</td>
+                    <td>Hemoragia subarahnoida</td>
+                </tr>
+                <tr>
+                    <td>478</td>
+                    <td>Hemorag intracerebr, hemorag intracran netraum</td>
+                </tr>
+                <tr>
+                    <td>479</td>
+                    <td>Infarct cerebral</td>
+                </tr>
+                <tr>
+                    <td>480</td>
+                    <td>Accid cerebr nespec ca hemoragic sau ca infarct</td>
+                </tr>
+                <tr>
+                    <td>481</td>
+                    <td>Alte boli cerebro-vasculare</td>
+                </tr>
+                <tr>
+                    <td>482</td>
+                    <td>Ateroscleroza</td>
+                </tr>
+                <tr>
+                    <td>483</td>
+                    <td>Anevrismul si disectia aortica</td>
+                </tr>
+                <tr>
+                    <td>484</td>
+                    <td>Alte anevrisme</td>
+                </tr>
+                <tr>
+                    <td>485</td>
+                    <td>Alte boli vasculare periferice</td>
+                </tr>
+                <tr>
+                    <td>486</td>
+                    <td>Embolia si tromboza arteriala</td>
+                </tr>
+                <tr>
+                    <td>487</td>
+                    <td>Alte afectiuni ale arterelor si arteriolelor</td>
+                </tr>
+                <tr>
+                    <td>488</td>
+                    <td>Bolile capilarelor</td>
+                </tr>
+                <tr>
+                    <td>489</td>
+                    <td>Flebita si tromboflebita</td>
+                </tr>
+                <tr>
+                    <td>490</td>
+                    <td>Embolia si tromboza venoasa</td>
+                </tr>
+                <tr>
+                    <td>491</td>
+                    <td>Vene varicoase ale membrelor inferioare</td>
+                </tr>
+                <tr>
+                    <td>492</td>
+                    <td>Hemoroizi</td>
+                </tr>
+                <tr>
+                    <td>493</td>
+                    <td>Varice esofag si alte afectiuni ale venelor</td>
+                </tr>
+                <tr>
+                    <td>494</td>
+                    <td>Limfadenita nespecifica, exceptind cea acuta</td>
+                </tr>
+                <tr>
+                    <td>495</td>
+                    <td>Hipotensiunea</td>
+                </tr>
+                <tr>
+                    <td>496</td>
+                    <td>Afect postchirurg sau postproced pe ap circ.</td>
+                </tr>
+                <tr>
+                    <td>497</td>
+                    <td>Alte afect nespecific ale aparat circulator</td>
+                </tr>
+                <tr>
+                    <td>498</td>
+                    <td>Rino-faringita acuta [guturaiul comun]</td>
+                </tr>
+                <tr>
+                    <td>499</td>
+                    <td>Sinuzita acuta</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>Faringita si amigdalita acuta</td>
+                </tr>
+                <tr>
+                    <td>501</td>
+                    <td>Laringita si traheita acuta</td>
+                </tr>
+                <tr>
+                    <td>502</td>
+                    <td>Laringita obstruct ac(crup) si epiglotita ac</td>
+                </tr>
+                <tr>
+                    <td>503</td>
+                    <td>I.C.R.S cu loc.multiple si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>504</td>
+                    <td>Gripa, cu virus gripal identificat</td>
+                </tr>
+                <tr>
+                    <td>505</td>
+                    <td>Gripa, cu virus neidentifat</td>
+                </tr>
+                <tr>
+                    <td>506</td>
+                    <td>Pneumonia virala, neclasata la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>507</td>
+                    <td>Pneumonia prin Streptococcus pneumoniae</td>
+                </tr>
+                <tr>
+                    <td>508</td>
+                    <td>Pneumonia prin Haemophilus influenzae</td>
+                </tr>
+                <tr>
+                    <td>509</td>
+                    <td>Pneumonii bacteriene, neclas la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>510</td>
+                    <td>Pneumonia datorita altor microorg infect.</td>
+                </tr>
+                <tr>
+                    <td>511</td>
+                    <td>Pneumonii cu micro-organisme neprecizate</td>
+                </tr>
+                <tr>
+                    <td>512</td>
+                    <td>Bronsita si bronsiolita acuta</td>
+                </tr>
+                <tr>
+                    <td>513</td>
+                    <td>Inf ac ale cailor resp inferioare, fara prec</td>
+                </tr>
+                <tr>
+                    <td>514</td>
+                    <td>Rinita alergica si vazomotorie</td>
+                </tr>
+                <tr>
+                    <td>515</td>
+                    <td>Rinita, rino-faringita si faringita cronica</td>
+                </tr>
+                <tr>
+                    <td>516</td>
+                    <td>Sinuzita cronica</td>
+                </tr>
+                <tr>
+                    <td>517</td>
+                    <td>Boli cronice ale amigdale si veget. adenoide</td>
+                </tr>
+                <tr>
+                    <td>518</td>
+                    <td>Angina flegmonoasa</td>
+                </tr>
+                <tr>
+                    <td>519</td>
+                    <td>Laringita si laringo-traheita</td>
+                </tr>
+                <tr>
+                    <td>520</td>
+                    <td>Boli corzi vocale si ale laringe, neclas</td>
+                </tr>
+                <tr>
+                    <td>521</td>
+                    <td>Alte boli ale cailor respir. superioare</td>
+                </tr>
+                <tr>
+                    <td>522</td>
+                    <td>Bronsita neprecizata ca acuta sau cronica</td>
+                </tr>
+                <tr>
+                    <td>523</td>
+                    <td>Bronsita cronica simpla si mucopurulenta</td>
+                </tr>
+                <tr>
+                    <td>524</td>
+                    <td>Bronsita cronica FAI</td>
+                </tr>
+                <tr>
+                    <td>525</td>
+                    <td>Emfizemul</td>
+                </tr>
+                <tr>
+                    <td>526</td>
+                    <td>Alte boli pulmonare obstructive cronice</td>
+                </tr>
+                <tr>
+                    <td>527</td>
+                    <td>Astmul</td>
+                </tr>
+                <tr>
+                    <td>528</td>
+                    <td>Bronsiectazia</td>
+                </tr>
+                <tr>
+                    <td>529</td>
+                    <td>Pneumoconioza de carbune, a minerilor</td>
+                </tr>
+                <tr>
+                    <td>530</td>
+                    <td>Pneumoconioza dat. azbest, altor fibre minerale</td>
+                </tr>
+                <tr>
+                    <td>531</td>
+                    <td>Pneumoconioza datorita pulberii de siliciu</td>
+                </tr>
+                <tr>
+                    <td>532</td>
+                    <td>Pneumoconioza dat. altor pulberi neorganice</td>
+                </tr>
+                <tr>
+                    <td>533</td>
+                    <td>Pneumoconioza asociata cu tuberculoza</td>
+                </tr>
+                <tr>
+                    <td>534</td>
+                    <td>Afec ale cai aeriene dat pulberilor organ preciz</td>
+                </tr>
+                <tr>
+                    <td>535</td>
+                    <td>Afec respiratorii datorite altor agenti externi</td>
+                </tr>
+                <tr>
+                    <td>536</td>
+                    <td>Edem pulmonar</td>
+                </tr>
+                <tr>
+                    <td>537</td>
+                    <td>Alte afectiuni pulmonare interstitiale</td>
+                </tr>
+                <tr>
+                    <td>538</td>
+                    <td>Abcesul pulmonar si al mediastinului</td>
+                </tr>
+                <tr>
+                    <td>539</td>
+                    <td>Pneumothorax</td>
+                </tr>
+                <tr>
+                    <td>540</td>
+                    <td>Afectiuni pleurale</td>
+                </tr>
+                <tr>
+                    <td>541</td>
+                    <td>Tulb.resp.dupa un act medic priv.diag. si trat.</td>
+                </tr>
+                <tr>
+                    <td>542</td>
+                    <td>Alte tulburari respiratorii</td>
+                </tr>
+                <tr>
+                    <td>543</td>
+                    <td>Tulburari de odontogeneza si de eruptie</td>
+                </tr>
+                <tr>
+                    <td>544</td>
+                    <td>Carii dentare</td>
+                </tr>
+                <tr>
+                    <td>545</td>
+                    <td>Alte boli ale tesutului dentar dur</td>
+                </tr>
+                <tr>
+                    <td>546</td>
+                    <td>Afect ale gingiei si crestei alveolare edentale</td>
+                </tr>
+                <tr>
+                    <td>547</td>
+                    <td>Anomalii dento-faciale [inclusiv malocluzia]</td>
+                </tr>
+                <tr>
+                    <td>548</td>
+                    <td>Alte boli ale maxilarelor</td>
+                </tr>
+                <tr>
+                    <td>549</td>
+                    <td>Bolile glandelor salivare</td>
+                </tr>
+                <tr>
+                    <td>550</td>
+                    <td>Stomatitele si afectiunile inrudite</td>
+                </tr>
+                <tr>
+                    <td>551</td>
+                    <td>Alte boli ale buzelor si mucoasei bucale</td>
+                </tr>
+                <tr>
+                    <td>552</td>
+                    <td>Bolile limbii</td>
+                </tr>
+                <tr>
+                    <td>553</td>
+                    <td>Esofagita</td>
+                </tr>
+                <tr>
+                    <td>554</td>
+                    <td>Alte boli ale esofagului</td>
+                </tr>
+                <tr>
+                    <td>555</td>
+                    <td>Ulcerul gastric</td>
+                </tr>
+                <tr>
+                    <td>556</td>
+                    <td>Ulcerul duodenal</td>
+                </tr>
+                <tr>
+                    <td>557</td>
+                    <td>Ulcerul peptic, cu localizare neprecizata</td>
+                </tr>
+                <tr>
+                    <td>558</td>
+                    <td>Ulcerul gastro-jejunal</td>
+                </tr>
+                <tr>
+                    <td>559</td>
+                    <td>Gastrita si duodenita</td>
+                </tr>
+                <tr>
+                    <td>560</td>
+                    <td>Dispepsia</td>
+                </tr>
+                <tr>
+                    <td>561</td>
+                    <td>Alte boli ale stomacului si duodenului</td>
+                </tr>
+                <tr>
+                    <td>562</td>
+                    <td>Apendicita acuta</td>
+                </tr>
+                <tr>
+                    <td>563</td>
+                    <td>Alte boli ale apendicelui</td>
+                </tr>
+                <tr>
+                    <td>564</td>
+                    <td>Hernia inghinala</td>
+                </tr>
+                <tr>
+                    <td>565</td>
+                    <td>Hernia diafragmatica</td>
+                </tr>
+                <tr>
+                    <td>566</td>
+                    <td>Alte hernii abdominale</td>
+                </tr>
+                <tr>
+                    <td>567</td>
+                    <td>Boala Crohn [enterita regionala]</td>
+                </tr>
+                <tr>
+                    <td>568</td>
+                    <td>Recto-colita hemoragica [colita ulceroasa]</td>
+                </tr>
+                <tr>
+                    <td>569</td>
+                    <td>Alte gastro-enterite si colite neinfectioase</td>
+                </tr>
+                <tr>
+                    <td>570</td>
+                    <td>Tulburari vasculare ale intestinului</td>
+                </tr>
+                <tr>
+                    <td>571</td>
+                    <td>Ileus paralitic si ocl. intest, fara hernie</td>
+                </tr>
+                <tr>
+                    <td>572</td>
+                    <td>Diverticuloza intestinului</td>
+                </tr>
+                <tr>
+                    <td>573</td>
+                    <td>Sindromul intestin iritabil,alte tulb func.</td>
+                </tr>
+                <tr>
+                    <td>574</td>
+                    <td>Fisura, fistula si abces reg.anale si rectale</td>
+                </tr>
+                <tr>
+                    <td>575</td>
+                    <td>Alte boli ale intestinului</td>
+                </tr>
+                <tr>
+                    <td>576</td>
+                    <td>Peritonita</td>
+                </tr>
+                <tr>
+                    <td>577</td>
+                    <td>Alte boli ale peritoneului</td>
+                </tr>
+                <tr>
+                    <td>578</td>
+                    <td>Boala alcoolica a ficatului</td>
+                </tr>
+                <tr>
+                    <td>579</td>
+                    <td>Boala toxica a ficatului</td>
+                </tr>
+                <tr>
+                    <td>580</td>
+                    <td>Hepatita cronica, neclasata la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>581</td>
+                    <td>Fibroza si ciroza ficatului</td>
+                </tr>
+                <tr>
+                    <td>582</td>
+                    <td>Alte boli inflamatorii ale ficatului</td>
+                </tr>
+                <tr>
+                    <td>583</td>
+                    <td>Alte boli ale ficatului</td>
+                </tr>
+                <tr>
+                    <td>584</td>
+                    <td>Litiaza biliara</td>
+                </tr>
+                <tr>
+                    <td>585</td>
+                    <td>Colecistita</td>
+                </tr>
+                <tr>
+                    <td>586</td>
+                    <td>Alte boli ale vezicii si cailor biliare</td>
+                </tr>
+                <tr>
+                    <td>587</td>
+                    <td>Pancreatita acuta</td>
+                </tr>
+                <tr>
+                    <td>588</td>
+                    <td>Alte boli ale pancreasului</td>
+                </tr>
+                <tr>
+                    <td>589</td>
+                    <td>Malabsorbtia intestinala</td>
+                </tr>
+                <tr>
+                    <td>590</td>
+                    <td>Afec ap.dig dupa un act medic.de diag.si tratam</td>
+                </tr>
+                <tr>
+                    <td>591</td>
+                    <td>Alte boli ale aparatului digestiv</td>
+                </tr>
+                <tr>
+                    <td>592</td>
+                    <td>Impetigo</td>
+                </tr>
+                <tr>
+                    <td>593</td>
+                    <td>Abces cut.,furuncul,furuncul antracoid, flegmon</td>
+                </tr>
+                <tr>
+                    <td>594</td>
+                    <td>Limfadenita acuta</td>
+                </tr>
+                <tr>
+                    <td>595</td>
+                    <td>Chist dermoid pararectal</td>
+                </tr>
+                <tr>
+                    <td>596</td>
+                    <td>Alte infec.local ale pielii,tesut celular subcut.</td>
+                </tr>
+                <tr>
+                    <td>597</td>
+                    <td>Pemphigus</td>
+                </tr>
+                <tr>
+                    <td>598</td>
+                    <td>Alte dermatoze buloase</td>
+                </tr>
+                <tr>
+                    <td>599</td>
+                    <td>Dermita seboreica</td>
+                </tr>
+                <tr>
+                    <td>600</td>
+                    <td>Dermita alergica de contact</td>
+                </tr>
+                <tr>
+                    <td>601</td>
+                    <td>Lichen simplex cronic si prurigo</td>
+                </tr>
+                <tr>
+                    <td>602</td>
+                    <td>Alte dermite</td>
+                </tr>
+                <tr>
+                    <td>603</td>
+                    <td>Psoriazis</td>
+                </tr>
+                <tr>
+                    <td>604</td>
+                    <td>Lichen plan</td>
+                </tr>
+                <tr>
+                    <td>605</td>
+                    <td>Alte leziuni papulo-scuamoase</td>
+                </tr>
+                <tr>
+                    <td>606</td>
+                    <td>Urticaria</td>
+                </tr>
+                <tr>
+                    <td>607</td>
+                    <td>Eritem polimorf</td>
+                </tr>
+                <tr>
+                    <td>608</td>
+                    <td>Eritem nodos</td>
+                </tr>
+                <tr>
+                    <td>609</td>
+                    <td>Alte forme de eritem</td>
+                </tr>
+                <tr>
+                    <td>610</td>
+                    <td>Insolatia</td>
+                </tr>
+                <tr>
+                    <td>611</td>
+                    <td>Radiodermite</td>
+                </tr>
+                <tr>
+                    <td>612</td>
+                    <td>Alte afect ale pielii si tesut celul subcut.</td>
+                </tr>
+                <tr>
+                    <td>613</td>
+                    <td>Bolile unghiei</td>
+                </tr>
+                <tr>
+                    <td>614</td>
+                    <td>Alopecia areata</td>
+                </tr>
+                <tr>
+                    <td>615</td>
+                    <td>Alte forme necatriciale de rarefiere a sist pilos</td>
+                </tr>
+                <tr>
+                    <td>616</td>
+                    <td>Hipertrichoza</td>
+                </tr>
+                <tr>
+                    <td>617</td>
+                    <td>Acneea</td>
+                </tr>
+                <tr>
+                    <td>618</td>
+                    <td>Acneea rozacee</td>
+                </tr>
+                <tr>
+                    <td>619</td>
+                    <td>Afectiuni foliculare</td>
+                </tr>
+                <tr>
+                    <td>620</td>
+                    <td>Afectiunile glandelor sudoripare</td>
+                </tr>
+                <tr>
+                    <td>621</td>
+                    <td>Vitiligo</td>
+                </tr>
+                <tr>
+                    <td>622</td>
+                    <td>Ulceratia de decubitus</td>
+                </tr>
+                <tr>
+                    <td>623</td>
+                    <td>Lupus eritematos</td>
+                </tr>
+                <tr>
+                    <td>624</td>
+                    <td>Alte afect localizate ale tesutului conjunctiv</td>
+                </tr>
+                <tr>
+                    <td>625</td>
+                    <td>Alte afect ale pielii si tesut. celular subcut.</td>
+                </tr>
+                <tr>
+                    <td>626</td>
+                    <td>Artrita cu bacterii piogene</td>
+                </tr>
+                <tr>
+                    <td>627</td>
+                    <td>Artropatia de reactie</td>
+                </tr>
+                <tr>
+                    <td>628</td>
+                    <td>Artrita reumatoida</td>
+                </tr>
+                <tr>
+                    <td>629</td>
+                    <td>Artrita juvenila</td>
+                </tr>
+                <tr>
+                    <td>630</td>
+                    <td>Guta</td>
+                </tr>
+                <tr>
+                    <td>631</td>
+                    <td>Alte artrite</td>
+                </tr>
+                <tr>
+                    <td>632</td>
+                    <td>Poliartroza</td>
+                </tr>
+                <tr>
+                    <td>633</td>
+                    <td>Coxartroza (artroza coapsei)</td>
+                </tr>
+                <tr>
+                    <td>634</td>
+                    <td>Gonartroza (artroza genunchiului)</td>
+                </tr>
+                <tr>
+                    <td>635</td>
+                    <td>Alte artroze</td>
+                </tr>
+                <tr>
+                    <td>636</td>
+                    <td>Deform dobindite ale deget.miinii si picioare.</td>
+                </tr>
+                <tr>
+                    <td>637</td>
+                    <td>Alte deformatii dobindite ale membrelor</td>
+                </tr>
+                <tr>
+                    <td>638</td>
+                    <td>Alte afectiuni articulare precizate</td>
+                </tr>
+                <tr>
+                    <td>639</td>
+                    <td>Alte afect articulare, neclas. la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>640</td>
+                    <td>Poliarterita nodoasa si afectiunile inrudite</td>
+                </tr>
+                <tr>
+                    <td>641</td>
+                    <td>Lupus eritematos diseminat</td>
+                </tr>
+                <tr>
+                    <td>642</td>
+                    <td>Alte atingeri sistemice ale tesut conjunctiv</td>
+                </tr>
+                <tr>
+                    <td>643</td>
+                    <td>Cifoza si lordoza</td>
+                </tr>
+                <tr>
+                    <td>644</td>
+                    <td>Scolioza</td>
+                </tr>
+                <tr>
+                    <td>645</td>
+                    <td>Alte dorsopatii deformante</td>
+                </tr>
+                <tr>
+                    <td>646</td>
+                    <td>Spondilartrita anchilozanta</td>
+                </tr>
+                <tr>
+                    <td>647</td>
+                    <td>Alte spondilopatii inflamatorii</td>
+                </tr>
+                <tr>
+                    <td>648</td>
+                    <td>Spondiloza</td>
+                </tr>
+                <tr>
+                    <td>649</td>
+                    <td>Alte spondilopatii</td>
+                </tr>
+                <tr>
+                    <td>650</td>
+                    <td>Atingeri ale discurilor cervicale</td>
+                </tr>
+                <tr>
+                    <td>651</td>
+                    <td>Alte atingeri ale discurilor intervertebrale</td>
+                </tr>
+                <tr>
+                    <td>652</td>
+                    <td>Alte dorsopatii, neclasate la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>653</td>
+                    <td>Dorsalgii</td>
+                </tr>
+                <tr>
+                    <td>654</td>
+                    <td>Miozita</td>
+                </tr>
+                <tr>
+                    <td>655</td>
+                    <td>Alte atingeri musculare</td>
+                </tr>
+                <tr>
+                    <td>656</td>
+                    <td>Sinovite si tenosinovite</td>
+                </tr>
+                <tr>
+                    <td>657</td>
+                    <td>Alte atingeri ale sinovialei si tendonului</td>
+                </tr>
+                <tr>
+                    <td>658</td>
+                    <td>Afect ale tes.moi leg de solicit excesiv a art</td>
+                </tr>
+                <tr>
+                    <td>659</td>
+                    <td>Leziunile umarului</td>
+                </tr>
+                <tr>
+                    <td>660</td>
+                    <td>Alte afect ale tes. moi, neclasate la alte loc</td>
+                </tr>
+                <tr>
+                    <td>661</td>
+                    <td>Osteoporoza</td>
+                </tr>
+                <tr>
+                    <td>662</td>
+                    <td>Osteomalacia adultului</td>
+                </tr>
+                <tr>
+                    <td>663</td>
+                    <td>Alte atingeri ale densit si ale struct. osoase</td>
+                </tr>
+                <tr>
+                    <td>664</td>
+                    <td>Osteomielita</td>
+                </tr>
+                <tr>
+                    <td>665</td>
+                    <td>Boala osoasa Paget [osteita deformanta]</td>
+                </tr>
+                <tr>
+                    <td>666</td>
+                    <td>Alte boli osoase</td>
+                </tr>
+                <tr>
+                    <td>667</td>
+                    <td>Osteochondrita juvenila a soldului si bazinului</td>
+                </tr>
+                <tr>
+                    <td>668</td>
+                    <td>Alte afectiuni ale cartilajului</td>
+                </tr>
+                <tr>
+                    <td>669</td>
+                    <td>Alte def.dobindit ale sist osteo-art ale muschi</td>
+                </tr>
+                <tr>
+                    <td>670</td>
+                    <td>Sindromul nefritic acut</td>
+                </tr>
+                <tr>
+                    <td>671</td>
+                    <td>Sindr.nefritic cu evolutie rapida si progresiva</td>
+                </tr>
+                <tr>
+                    <td>672</td>
+                    <td>Hematuria recidivanta si persistenta</td>
+                </tr>
+                <tr>
+                    <td>673</td>
+                    <td>Sindromul nefritic cronic</td>
+                </tr>
+                <tr>
+                    <td>674</td>
+                    <td>Sindromul nefrotic</td>
+                </tr>
+                <tr>
+                    <td>675</td>
+                    <td>Sindromul nefritic, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>676</td>
+                    <td>Proteinuria izolata cu lez morfologice preciz.</td>
+                </tr>
+                <tr>
+                    <td>677</td>
+                    <td>Nefropatia ereditara, neclasata la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>678</td>
+                    <td>Nefrita tubulo-interstitiala acuta</td>
+                </tr>
+                <tr>
+                    <td>679</td>
+                    <td>Nefrita tubulo interstitiala cronica</td>
+                </tr>
+                <tr>
+                    <td>680</td>
+                    <td>Nefrita tubulo interstit,nepr ca acuta sau cronica</td>
+                </tr>
+                <tr>
+                    <td>681</td>
+                    <td>Uropatia obstructiva si prin reflux</td>
+                </tr>
+                <tr>
+                    <td>682</td>
+                    <td>Atingeri tub-interstit si tub.dat. medic.si metale</td>
+                </tr>
+                <tr>
+                    <td>683</td>
+                    <td>Alte boli renale tubulo-interstitiale</td>
+                </tr>
+                <tr>
+                    <td>684</td>
+                    <td>Insuficienta renala acuta</td>
+                </tr>
+                <tr>
+                    <td>685</td>
+                    <td>Insuficienta renala cronica</td>
+                </tr>
+                <tr>
+                    <td>686</td>
+                    <td>Insuficienta renala, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>687</td>
+                    <td>Litiaza rinichiului si ureterului</td>
+                </tr>
+                <tr>
+                    <td>688</td>
+                    <td>Litiaza cailor urinare inferioare</td>
+                </tr>
+                <tr>
+                    <td>689</td>
+                    <td>Colica nefritica, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>690</td>
+                    <td>Afectiuni datorite unei rele functionari tubulare</td>
+                </tr>
+                <tr>
+                    <td>691</td>
+                    <td>Rinichi scleros,fara precizare</td>
+                </tr>
+                <tr>
+                    <td>692</td>
+                    <td>Rinichi mic de cauza necunoscuta</td>
+                </tr>
+                <tr>
+                    <td>693</td>
+                    <td>Alte afect ale rinichiului si ureterului</td>
+                </tr>
+                <tr>
+                    <td>694</td>
+                    <td>Cistita</td>
+                </tr>
+                <tr>
+                    <td>695</td>
+                    <td>Disfunctia neuro-musculara a vezicii</td>
+                </tr>
+                <tr>
+                    <td>696</td>
+                    <td>Alte afectiuni ale vezicii</td>
+                </tr>
+                <tr>
+                    <td>697</td>
+                    <td>Uretrita si sindromul uretral</td>
+                </tr>
+                <tr>
+                    <td>698</td>
+                    <td>Strictura uretrala</td>
+                </tr>
+                <tr>
+                    <td>699</td>
+                    <td>Alte afectiuni ale uretrei</td>
+                </tr>
+                <tr>
+                    <td>700</td>
+                    <td>Alte afectiuni ale aparatului urinar</td>
+                </tr>
+                <tr>
+                    <td>701</td>
+                    <td>Hiperplazia prostatei</td>
+                </tr>
+                <tr>
+                    <td>702</td>
+                    <td>Hidrocelul si spermatocelul</td>
+                </tr>
+                <tr>
+                    <td>703</td>
+                    <td>Orhita si epididimita</td>
+                </tr>
+                <tr>
+                    <td>704</td>
+                    <td>Hipertrofia preputului, fimoza, parafimoza</td>
+                </tr>
+                <tr>
+                    <td>705</td>
+                    <td>Alte afectiuni ale organelor genitale la barbat</td>
+                </tr>
+                <tr>
+                    <td>706</td>
+                    <td>Displaziile mamare benigne</td>
+                </tr>
+                <tr>
+                    <td>707</td>
+                    <td>Afectiunile inflamatorii ale sinului</td>
+                </tr>
+                <tr>
+                    <td>708</td>
+                    <td>Alte afectiuni ale sinului</td>
+                </tr>
+                <tr>
+                    <td>709</td>
+                    <td>Salpingita si ooforita</td>
+                </tr>
+                <tr>
+                    <td>710</td>
+                    <td>Afect inflamat.ale uterului, cu exceptia colului</td>
+                </tr>
+                <tr>
+                    <td>711</td>
+                    <td>Afectiuni inflamatorii ale colului uterin</td>
+                </tr>
+                <tr>
+                    <td>712</td>
+                    <td>Alte afectiuni inflamatorii pelviene la femeie</td>
+                </tr>
+                <tr>
+                    <td>713</td>
+                    <td>Alte inflamatii ale vaginului si vulvei</td>
+                </tr>
+                <tr>
+                    <td>714</td>
+                    <td>Endometrioza</td>
+                </tr>
+                <tr>
+                    <td>715</td>
+                    <td>Prolapsul genital la femeie</td>
+                </tr>
+                <tr>
+                    <td>716</td>
+                    <td>Fistulele tractului genital la femeie</td>
+                </tr>
+                <tr>
+                    <td>717</td>
+                    <td>Afect neinflam ale ovar,trompei Fallope,ligament</td>
+                </tr>
+                <tr>
+                    <td>718</td>
+                    <td>Polipul tractului genital la femeie</td>
+                </tr>
+                <tr>
+                    <td>719</td>
+                    <td>Alte afect neinflam ale uterului, exceptind colul</td>
+                </tr>
+                <tr>
+                    <td>720</td>
+                    <td>Eroziunea cu ectropion a colului uterin</td>
+                </tr>
+                <tr>
+                    <td>721</td>
+                    <td>Displazia colului uterin</td>
+                </tr>
+                <tr>
+                    <td>722</td>
+                    <td>Alte afectiuni neinflamatorii ale colului uterin</td>
+                </tr>
+                <tr>
+                    <td>723</td>
+                    <td>Alte afectiuni neinflamatorii ale vaginului</td>
+                </tr>
+                <tr>
+                    <td>724</td>
+                    <td>Alte afect neinflam. ale vulvei si perineului</td>
+                </tr>
+                <tr>
+                    <td>725</td>
+                    <td>Amenoreea, oligomenoreea, hipomenoreea</td>
+                </tr>
+                <tr>
+                    <td>726</td>
+                    <td>Menoragia, polimenoreea si metroragia</td>
+                </tr>
+                <tr>
+                    <td>727</td>
+                    <td>Alte singerari anormale ale uterului si vaginului</td>
+                </tr>
+                <tr>
+                    <td>728</td>
+                    <td>Dureri,alte afect ale org.genit.la fem,tulb.ciclu</td>
+                </tr>
+                <tr>
+                    <td>729</td>
+                    <td>Tulb menopauzei si alte tulb ale perimenopauzei</td>
+                </tr>
+                <tr>
+                    <td>730</td>
+                    <td>Avort repetat</td>
+                </tr>
+                <tr>
+                    <td>731</td>
+                    <td>Sterilitatea la femeie</td>
+                </tr>
+                <tr>
+                    <td>732</td>
+                    <td>Af.ap.genito-urin dupa un act med.de diag.si trat</td>
+                </tr>
+                <tr>
+                    <td>733</td>
+                    <td>Sarcina extrauterina</td>
+                </tr>
+                <tr>
+                    <td>734</td>
+                    <td>Mola hidatiforma</td>
+                </tr>
+                <tr>
+                    <td>735</td>
+                    <td>Avortul spontan</td>
+                </tr>
+                <tr>
+                    <td>736</td>
+                    <td>Alte forme de avort</td>
+                </tr>
+                <tr>
+                    <td>737</td>
+                    <td>Compl consec. unui avort, sarcini extrauter si mol</td>
+                </tr>
+                <tr>
+                    <td>738</td>
+                    <td>HTA preexist,complicind sarcina, nasterea si lauz.</td>
+                </tr>
+                <tr>
+                    <td>739</td>
+                    <td>Sindrom HTA preexistent, cu proteinurie supraadaug</td>
+                </tr>
+                <tr>
+                    <td>740</td>
+                    <td>Edem si protein. gestat. fara hipertensiun</td>
+                </tr>
+                <tr>
+                    <td>741</td>
+                    <td>HTA gestationala<span style='mso-spacerun:yes'>  </span>fara
+                        proteinurie import
+                    </td>
+                </tr>
+                <tr>
+                    <td>742</td>
+                    <td>HTA gestationala<span style='mso-spacerun:yes'>  </span>cu
+                        proteinurie importan
+                    </td>
+                </tr>
+                <tr>
+                    <td>743</td>
+                    <td>Eclampsia</td>
+                </tr>
+                <tr>
+                    <td>744</td>
+                    <td>Hipertensiunea mamei, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>745</td>
+                    <td>Hemoragia de la debutul sarcinii</td>
+                </tr>
+                <tr>
+                    <td>746</td>
+                    <td>Voma incoercibila in cursul sarcinii</td>
+                </tr>
+                <tr>
+                    <td>747</td>
+                    <td>Complicatii venoase ale sarcinii</td>
+                </tr>
+                <tr>
+                    <td>748</td>
+                    <td>Infect ap. genito-urinar in cursul sarcinii</td>
+                </tr>
+                <tr>
+                    <td>749</td>
+                    <td>Diabetul zaharat in cursul sarcinii</td>
+                </tr>
+                <tr>
+                    <td>750</td>
+                    <td>Malnutritia in cursul sarcinii</td>
+                </tr>
+                <tr>
+                    <td>751</td>
+                    <td>Ingrijiri acordat mamei ptr alte af leg de sarcina</td>
+                </tr>
+                <tr>
+                    <td>752</td>
+                    <td>Rez. anorm const.in curs examen.prenat ale mamei</td>
+                </tr>
+                <tr>
+                    <td>753</td>
+                    <td>Complicatiile unei anestezii in cursul sarcinii</td>
+                </tr>
+                <tr>
+                    <td>754</td>
+                    <td>Complicatiile specifice unei sarcini multiple</td>
+                </tr>
+                <tr>
+                    <td>755</td>
+                    <td>Hidramnios</td>
+                </tr>
+                <tr>
+                    <td>756</td>
+                    <td>Ruptura prematura a membranelor</td>
+                </tr>
+                <tr>
+                    <td>757</td>
+                    <td>Placenta praevia</td>
+                </tr>
+                <tr>
+                    <td>758</td>
+                    <td>Hemorag. precedind nasterea,neclas la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>759</td>
+                    <td>Travaliu prelungit</td>
+                </tr>
+                <tr>
+                    <td>760</td>
+                    <td>Distocia de obstacol dat. poz. si prez anorma fat</td>
+                </tr>
+                <tr>
+                    <td>761</td>
+                    <td>Distocia de obst. dat.unei anomalii pelv a mamei</td>
+                </tr>
+                <tr>
+                    <td>762</td>
+                    <td>Trav si nast compl cu hemorag intrapartum</td>
+                </tr>
+                <tr>
+                    <td>763</td>
+                    <td>Trav si nast compl cu anomal.de cordon ombilical</td>
+                </tr>
+                <tr>
+                    <td>764</td>
+                    <td>Ruptura perineala in cursul nasterii</td>
+                </tr>
+                <tr>
+                    <td>765</td>
+                    <td>Alte traumatisme obstetricale</td>
+                </tr>
+                <tr>
+                    <td>766</td>
+                    <td>Hemoragie post-partum</td>
+                </tr>
+                <tr>
+                    <td>767</td>
+                    <td>Retentia de placenta si de membrane, fara hemorag</td>
+                </tr>
+                <tr>
+                    <td>768</td>
+                    <td>Comp.unei anestezii in cursul trav. si nasterii</td>
+                </tr>
+                <tr>
+                    <td>769</td>
+                    <td>Alte complic ale trav si nasterii</td>
+                </tr>
+                <tr>
+                    <td>770</td>
+                    <td>Infectia puerperala</td>
+                </tr>
+                <tr>
+                    <td>771</td>
+                    <td>Alte infectii puerperale</td>
+                </tr>
+                <tr>
+                    <td>772</td>
+                    <td>Complicatii venoase in cursul lauziei</td>
+                </tr>
+                <tr>
+                    <td>773</td>
+                    <td>Embolia de origine obstetricala</td>
+                </tr>
+                <tr>
+                    <td>774</td>
+                    <td>Complicatiile unei anestezii in cursul lauziei</td>
+                </tr>
+                <tr>
+                    <td>775</td>
+                    <td>Complicatii puerperale, neclasate la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>776</td>
+                    <td>Infectia sinului asociata nasterii</td>
+                </tr>
+                <tr>
+                    <td>777</td>
+                    <td>Alte afec ale sin asoc nasterii si tulb de lactat</td>
+                </tr>
+                <tr>
+                    <td>778</td>
+                    <td>Fat,nou-nasc af.de tulb.mat,cu si fara leg.cu sarc</td>
+                </tr>
+                <tr>
+                    <td>779</td>
+                    <td>Fat,nou-nasc af.de complicatiile sarcinii, la mama</td>
+                </tr>
+                <tr>
+                    <td>780</td>
+                    <td>Fat,nou-nasc af.de comp.priv.placenta,cordon,mbme</td>
+                </tr>
+                <tr>
+                    <td>781</td>
+                    <td>Fat,nou-nasc af.de alte compl ale trav. si nasteri</td>
+                </tr>
+                <tr>
+                    <td>782</td>
+                    <td>Fat,nou-nasc.af.de ef.nociv.transm. transplacent.</td>
+                </tr>
+                <tr>
+                    <td>783</td>
+                    <td>Intirzierea cresterii si malnutritia fatului</td>
+                </tr>
+                <tr>
+                    <td>784</td>
+                    <td>Tulb.relative la scurt.gest.si gr.insuf.la nastere</td>
+                </tr>
+                <tr>
+                    <td>785</td>
+                    <td>Tulb.priv.prelung.gest, dificult cresc la nastere</td>
+                </tr>
+                <tr>
+                    <td>786</td>
+                    <td>Ruptura si hemorag intracraniana dat.trauma. obst.</td>
+                </tr>
+                <tr>
+                    <td>787</td>
+                    <td>Alte leziuni ale SNC datorite trauma. obstetric.</td>
+                </tr>
+                <tr>
+                    <td>788</td>
+                    <td>Alte traumatisme obstetricale</td>
+                </tr>
+                <tr>
+                    <td>789</td>
+                    <td>Hipoxie intra-uterina</td>
+                </tr>
+                <tr>
+                    <td>790</td>
+                    <td>Asfixia obstetricala</td>
+                </tr>
+                <tr>
+                    <td>791</td>
+                    <td>Pneumopatia congenitala</td>
+                </tr>
+                <tr>
+                    <td>792</td>
+                    <td>Sindroame de aspiratie in perioada neonatala</td>
+                </tr>
+                <tr>
+                    <td>793</td>
+                    <td>Emfiz interstit si af.inrudit survenind<span
+                            style='mso-spacerun:yes'>  </span>perinat.
+                    </td>
+                </tr>
+                <tr>
+                    <td>794</td>
+                    <td>Hemoragia pulmon survenind in perioada perinatala</td>
+                </tr>
+                <tr>
+                    <td>795</td>
+                    <td>Alte tulb resp. survenind in perioada perinatala</td>
+                </tr>
+                <tr>
+                    <td>796</td>
+                    <td>Tulb cardio-vasculare survenind in per.perinatala</td>
+                </tr>
+                <tr>
+                    <td>797</td>
+                    <td>Rubeola congenitala</td>
+                </tr>
+                <tr>
+                    <td>798</td>
+                    <td>Boli congenitale virotice</td>
+                </tr>
+                <tr>
+                    <td>799</td>
+                    <td>Infectia bacteriana a nou-nascutului</td>
+                </tr>
+                <tr>
+                    <td>800</td>
+                    <td>Alte boli infectioase si parazitare congenitale</td>
+                </tr>
+                <tr>
+                    <td>801</td>
+                    <td>Omfalita nou-nasc., cu sau fara hemoragie usoara</td>
+                </tr>
+                <tr>
+                    <td>802</td>
+                    <td>Alte infectii specifice perioadei perinatale</td>
+                </tr>
+                <tr>
+                    <td>803</td>
+                    <td>Hemoragii fetale si neonatale</td>
+                </tr>
+                <tr>
+                    <td>804</td>
+                    <td>Boala hemolitica a fatului si nou nascutului</td>
+                </tr>
+                <tr>
+                    <td>805</td>
+                    <td>Anasarca feto-placentara dat. bolii hemolitice</td>
+                </tr>
+                <tr>
+                    <td>806</td>
+                    <td>Icter nuclear [kernicter]</td>
+                </tr>
+                <tr>
+                    <td>807</td>
+                    <td>Icter neonat dat.alt hemolize excesiv,alt cauze</td>
+                </tr>
+                <tr>
+                    <td>808</td>
+                    <td>Alte tulb hematologice ale perioadei perinatale</td>
+                </tr>
+                <tr>
+                    <td>809</td>
+                    <td>Tulb endocrine tranzitorii ale nou-nascutului</td>
+                </tr>
+                <tr>
+                    <td>810</td>
+                    <td>Ocluzia intestinala la nou-nascut</td>
+                </tr>
+                <tr>
+                    <td>811</td>
+                    <td>Enterocolita necrozanta a fatului si nou-nasc.</td>
+                </tr>
+                <tr>
+                    <td>812</td>
+                    <td>Alte tulb. perinatale ale aparatului digestiv</td>
+                </tr>
+                <tr>
+                    <td>813</td>
+                    <td>Af.ale tegumente, specifice fat si nou-nascut.</td>
+                </tr>
+                <tr>
+                    <td>814</td>
+                    <td>Convulsiile nou-nascutului</td>
+                </tr>
+                <tr>
+                    <td>815</td>
+                    <td>Alte tulburari cerebrale ale nou-nascutului</td>
+                </tr>
+                <tr>
+                    <td>816</td>
+                    <td>Tulburarile de alimentatie ale nou-nascutului</td>
+                </tr>
+                <tr>
+                    <td>817</td>
+                    <td>Reactii si intox medicam la fat si nou-nascut</td>
+                </tr>
+                <tr>
+                    <td>818</td>
+                    <td>Tulburari de tonus muscular la nou-nascut</td>
+                </tr>
+                <tr>
+                    <td>819</td>
+                    <td>Moarte fetala de cauza neprecizata</td>
+                </tr>
+                <tr>
+                    <td>820</td>
+                    <td>Alte af a caror orig se situeaza in per perinat</td>
+                </tr>
+                <tr>
+                    <td>821</td>
+                    <td>Microcefalia</td>
+                </tr>
+                <tr>
+                    <td>822</td>
+                    <td>Hidrocefalia congenitala</td>
+                </tr>
+                <tr>
+                    <td>823</td>
+                    <td>Alte malformatii congenitale ale creierului</td>
+                </tr>
+                <tr>
+                    <td>824</td>
+                    <td>Spina bifida</td>
+                </tr>
+                <tr>
+                    <td>825</td>
+                    <td>Alte malformatii ale maduvei spinarii</td>
+                </tr>
+                <tr>
+                    <td>826</td>
+                    <td>Alte malform. congenit ale sistemului nervos</td>
+                </tr>
+                <tr>
+                    <td>827</td>
+                    <td>Anoflalmia, microftalmia si macroftalmia</td>
+                </tr>
+                <tr>
+                    <td>828</td>
+                    <td>Alte malformatii congenitale ale fetei si git.</td>
+                </tr>
+                <tr>
+                    <td>829</td>
+                    <td>Malform congenit ale cavit, orificii si ale sept.</td>
+                </tr>
+                <tr>
+                    <td>830</td>
+                    <td>Alte malformatii congenitale ale inimii</td>
+                </tr>
+                <tr>
+                    <td>831</td>
+                    <td>Malformatii congenitale ale arterelor mari</td>
+                </tr>
+                <tr>
+                    <td>832</td>
+                    <td>Malformatii congenitale ale venelor mari</td>
+                </tr>
+                <tr>
+                    <td>833</td>
+                    <td>Alte malformatii congenitale ale ap circulator</td>
+                </tr>
+                <tr>
+                    <td>834</td>
+                    <td>Malform congen,alte anomal laringe,trah,bronh.</td>
+                </tr>
+                <tr>
+                    <td>835</td>
+                    <td>Malformatia congenitala a pulmonului</td>
+                </tr>
+                <tr>
+                    <td>836</td>
+                    <td>Alte malformatii congenitale ale ap respirator</td>
+                </tr>
+                <tr>
+                    <td>837</td>
+                    <td>Fisura palatina</td>
+                </tr>
+                <tr>
+                    <td>838</td>
+                    <td>Fisura labiala</td>
+                </tr>
+                <tr>
+                    <td>839</td>
+                    <td>Buza de iepure cu palatoschisis</td>
+                </tr>
+                <tr>
+                    <td>840</td>
+                    <td>Malform congenit ale cailor digestive superioare</td>
+                </tr>
+                <tr>
+                    <td>841</td>
+                    <td>Absenta, atrezia si stenoza congenit a intes subt</td>
+                </tr>
+                <tr>
+                    <td>842</td>
+                    <td>Alte malformatii congenitale ale intestinului</td>
+                </tr>
+                <tr>
+                    <td>843</td>
+                    <td>Malf cong ale vezicii biliare, cai biliare, ficat</td>
+                </tr>
+                <tr>
+                    <td>844</td>
+                    <td>Alte malformatii ale aparatului digestiv</td>
+                </tr>
+                <tr>
+                    <td>845</td>
+                    <td>Malformatiile uterului si cervixului</td>
+                </tr>
+                <tr>
+                    <td>846</td>
+                    <td>Alte malf cong ale organelor genitale feminine</td>
+                </tr>
+                <tr>
+                    <td>847</td>
+                    <td>Malform cong ale organelor genitale masculine</td>
+                </tr>
+                <tr>
+                    <td>848</td>
+                    <td>Agenezie renala si alte defecte ale rinichiului</td>
+                </tr>
+                <tr>
+                    <td>849</td>
+                    <td>Boala chistica a rinichiului</td>
+                </tr>
+                <tr>
+                    <td>850</td>
+                    <td>Alte malformatii congenitale ale aparatului urinar</td>
+                </tr>
+                <tr>
+                    <td>851</td>
+                    <td>Deformatii congenitale ale soldului</td>
+                </tr>
+                <tr>
+                    <td>852</td>
+                    <td>Deformatii congenitale ale piciorului</td>
+                </tr>
+                <tr>
+                    <td>853</td>
+                    <td>Deform osoase ale cap, fetei, coloanei vert. piept</td>
+                </tr>
+                <tr>
+                    <td>854</td>
+                    <td>Polidactilia si sindactilia</td>
+                </tr>
+                <tr>
+                    <td>855</td>
+                    <td>Alte anomalii congenitale ale membrelor</td>
+                </tr>
+                <tr>
+                    <td>856</td>
+                    <td>Malf,anomalii cong ale coloanei vert,coaste,stern</td>
+                </tr>
+                <tr>
+                    <td>857</td>
+                    <td>Malf cong ale sist.osteo-art, neclasate la alte</td>
+                </tr>
+                <tr>
+                    <td>858</td>
+                    <td>Alte malf cong spec., afectind sist multiple FAI</td>
+                </tr>
+                <tr>
+                    <td>859</td>
+                    <td>Alte malf congenitale, neclasate la alte locuri</td>
+                </tr>
+                <tr>
+                    <td>860</td>
+                    <td>Sindromul Down</td>
+                </tr>
+                <tr>
+                    <td>861</td>
+                    <td>Sindromul Edwards si sindromul Patau</td>
+                </tr>
+                <tr>
+                    <td>862</td>
+                    <td>Alte trisomii,trisomii partiale a autosomiilor</td>
+                </tr>
+                <tr>
+                    <td>863</td>
+                    <td>Monosom.,lipsa de autosomi, neclas. la alte loc</td>
+                </tr>
+                <tr>
+                    <td>864</td>
+                    <td>Rearanjarea echilibrata si markerii structurali</td>
+                </tr>
+                <tr>
+                    <td>865</td>
+                    <td>Sindromul Turner</td>
+                </tr>
+                <tr>
+                    <td>866</td>
+                    <td>Alte anom ale cromozomilor sex., fenotip fem</td>
+                </tr>
+                <tr>
+                    <td>867</td>
+                    <td>Alte anom ale cromozomilor sex., fenotip masc</td>
+                </tr>
+                <tr>
+                    <td>868</td>
+                    <td>Alte anom ale cromozomi.sex, neclas.la alte loc</td>
+                </tr>
+                <tr>
+                    <td>869</td>
+                    <td>Simpt.si semne referitoare la ap.circ si resp.</td>
+                </tr>
+                <tr>
+                    <td>870</td>
+                    <td>Simpt.si semne referit. la ap.digest si abdomen</td>
+                </tr>
+                <tr>
+                    <td>871</td>
+                    <td>Simpt.si semne ref. la sist nerv si osteo-musc.</td>
+                </tr>
+                <tr>
+                    <td>872</td>
+                    <td>Simpt.si semne referitoare la aparatul urinar</td>
+                </tr>
+                <tr>
+                    <td>873</td>
+                    <td>Simpt.si semne ref.la constienta, percep,comp.</td>
+                </tr>
+                <tr>
+                    <td>874</td>
+                    <td>Simptome si semne generale</td>
+                </tr>
+                <tr>
+                    <td>875</td>
+                    <td>Rezultate anormale ale ex.de singe, fara diag</td>
+                </tr>
+                <tr>
+                    <td>876</td>
+                    <td>Rezult anorm.ale investig din urina, fara diag</td>
+                </tr>
+                <tr>
+                    <td>877</td>
+                    <td>Rez. anorm.ale ex.altor lichide,subst,tesut.</td>
+                </tr>
+                <tr>
+                    <td>878</td>
+                    <td>Rez.anorm. ale imag.diag.,probe.funct,fara diag</td>
+                </tr>
+                <tr>
+                    <td>879</td>
+                    <td>Leziunea traumatica superficiala a capului</td>
+                </tr>
+                <tr>
+                    <td>880</td>
+                    <td>Plaga deschisa a capului</td>
+                </tr>
+                <tr>
+                    <td>881</td>
+                    <td>Fractura craniului si oaselor fetei</td>
+                </tr>
+                <tr>
+                    <td>882</td>
+                    <td>Lux, entorsa si intind de lig ale art. capului</td>
+                </tr>
+                <tr>
+                    <td>883</td>
+                    <td>Leziunea traumatica a nervilor cranieni</td>
+                </tr>
+                <tr>
+                    <td>884</td>
+                    <td>Leziunea traumatica a ochiului si orbitei</td>
+                </tr>
+                <tr>
+                    <td>885</td>
+                    <td>Leziunea traumatica intracraniana</td>
+                </tr>
+                <tr>
+                    <td>886</td>
+                    <td>Zdrobirea traumatica a capului</td>
+                </tr>
+                <tr>
+                    <td>887</td>
+                    <td>Amputatia traumatica partiala a capului</td>
+                </tr>
+                <tr>
+                    <td>888</td>
+                    <td>Lez.traum. ale capului, alte si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>889</td>
+                    <td>Leziunea traumatica superficiala a gitului</td>
+                </tr>
+                <tr>
+                    <td>890</td>
+                    <td>Plaga deschisa a gitului</td>
+                </tr>
+                <tr>
+                    <td>891</td>
+                    <td>Fractura gitului</td>
+                </tr>
+                <tr>
+                    <td>892</td>
+                    <td>Luxatia, entorsa si intind.de lig.ale art. git</td>
+                </tr>
+                <tr>
+                    <td>893</td>
+                    <td>Lez.traum a nervi si a maduvei spin.la niv git</td>
+                </tr>
+                <tr>
+                    <td>894</td>
+                    <td>Leziunea traum a vaselor sangvine la niv. git.</td>
+                </tr>
+                <tr>
+                    <td>895</td>
+                    <td>Lez.traum. a muschilor si tendoanelor gitului</td>
+                </tr>
+                <tr>
+                    <td>896</td>
+                    <td>Zdrobirea traumatica a gitului</td>
+                </tr>
+                <tr>
+                    <td>897</td>
+                    <td>Amputatia traumatica la nivelul gitului</td>
+                </tr>
+                <tr>
+                    <td>898</td>
+                    <td>Leziuni traumatice ale git., alte si nepreciz</td>
+                </tr>
+                <tr>
+                    <td>899</td>
+                    <td>Leziunea traumatica superficiala a toracelui</td>
+                </tr>
+                <tr>
+                    <td>900</td>
+                    <td>Plaga deschisa a toracelui</td>
+                </tr>
+                <tr>
+                    <td>901</td>
+                    <td>Fractura de coaste , stern si coloana vertebr</td>
+                </tr>
+                <tr>
+                    <td>902</td>
+                    <td>Lux., entorsa si intind de lig ale art.torace</td>
+                </tr>
+                <tr>
+                    <td>903</td>
+                    <td>Lez traum a nerv,a maduvei spin.la niv.torace</td>
+                </tr>
+                <tr>
+                    <td>904</td>
+                    <td>Leziunea traum a vaselor sangvine ale torace.</td>
+                </tr>
+                <tr>
+                    <td>905</td>
+                    <td>Leziunea traumatica a inimii</td>
+                </tr>
+                <tr>
+                    <td>906</td>
+                    <td>Lez. traum. ale org. intratoracice</td>
+                </tr>
+                <tr>
+                    <td>907</td>
+                    <td>Zdrob.traum. a torace si amput traum. a torac</td>
+                </tr>
+                <tr>
+                    <td>908</td>
+                    <td>Lez.traum. ale torace, alte si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>909</td>
+                    <td>Lez.traum.superficiala abdomen,lomb,bazinului</td>
+                </tr>
+                <tr>
+                    <td>910</td>
+                    <td>Plaga deschisa a abdomen,lomb. si bazinului</td>
+                </tr>
+                <tr>
+                    <td>911</td>
+                    <td>Fractura coloanei vert. lomb si a bazinului</td>
+                </tr>
+                <tr>
+                    <td>912</td>
+                    <td>Lux,entorsa,intind.lig ale art.col.vert,baz</td>
+                </tr>
+                <tr>
+                    <td>913</td>
+                    <td>Lez.nerv., col.vert.lomb.si abdomen</td>
+                </tr>
+                <tr>
+                    <td>914</td>
+                    <td>Lez.traum a vase.sang.la niv abdomen.lomb,baz</td>
+                </tr>
+                <tr>
+                    <td>915</td>
+                    <td>Lez. traumatica a organelor intra-abdominale</td>
+                </tr>
+                <tr>
+                    <td>916</td>
+                    <td>Leziunea traumatica a organelor pelviene</td>
+                </tr>
+                <tr>
+                    <td>917</td>
+                    <td>Zdrob si amput traum a abdomen, lomb,bazinului</td>
+                </tr>
+                <tr>
+                    <td>918</td>
+                    <td>Lez. traum.ale abdomen,lomb.,baz,alte si FAI</td>
+                </tr>
+                <tr>
+                    <td>919</td>
+                    <td>Leziunea traumatica superficiala</td>
+                </tr>
+                <tr>
+                    <td>920</td>
+                    <td>Plaga deschisa</td>
+                </tr>
+                <tr>
+                    <td>921</td>
+                    <td>Fractura</td>
+                </tr>
+                <tr>
+                    <td>922</td>
+                    <td>Lux.,entorsa si intind de lig ale articulatiei</td>
+                </tr>
+                <tr>
+                    <td>923</td>
+                    <td>Leziunea traumatica a nervilor</td>
+                </tr>
+                <tr>
+                    <td>924</td>
+                    <td>Leziunea vaselor sangvine</td>
+                </tr>
+                <tr>
+                    <td>925</td>
+                    <td>Lez.traum. a muschi,tendoane,la niv umar,brat</td>
+                </tr>
+                <tr>
+                    <td>926</td>
+                    <td>Zdrobirea traumatica</td>
+                </tr>
+                <tr>
+                    <td>927</td>
+                    <td>Amputatia traumatica</td>
+                </tr>
+                <tr>
+                    <td>928</td>
+                    <td>Leziuni traumatice, alte si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>929</td>
+                    <td>Leziunea traumatica superficiala</td>
+                </tr>
+                <tr>
+                    <td>930</td>
+                    <td>Plaga deschisa</td>
+                </tr>
+                <tr>
+                    <td>931</td>
+                    <td>Fractura</td>
+                </tr>
+                <tr>
+                    <td>932</td>
+                    <td>Lux, entorsa si intind de lig.a articulatiei</td>
+                </tr>
+                <tr>
+                    <td>933</td>
+                    <td>Leziunea traumatica a nervilor</td>
+                </tr>
+                <tr>
+                    <td>934</td>
+                    <td>Leziunea traumatica a vaselor sangvine</td>
+                </tr>
+                <tr>
+                    <td>935</td>
+                    <td>Lez.traumatica a muschilor si tendoanelor</td>
+                </tr>
+                <tr>
+                    <td>936</td>
+                    <td>Zdrobirea traumatica</td>
+                </tr>
+                <tr>
+                    <td>937</td>
+                    <td>Amputatia traumatica</td>
+                </tr>
+                <tr>
+                    <td>938</td>
+                    <td>Leziuni traumatice, alte si neprecizate</td>
+                </tr>
+                <tr>
+                    <td>939</td>
+                    <td>Lez.traum. superficiale cu mai multe loc ale corp</td>
+                </tr>
+                <tr>
+                    <td>940</td>
+                    <td>Plagi deschise cu mai multe localizari ale corp.</td>
+                </tr>
+                <tr>
+                    <td>941</td>
+                    <td>Fracturi cu alte localizari multiple ale corpului</td>
+                </tr>
+                <tr>
+                    <td>942</td>
+                    <td>Lux., entorse si intind de lig. cu loc multiple</td>
+                </tr>
+                <tr>
+                    <td>943</td>
+                    <td>Zdrobiri traum.cu loc. multiple ale corpului</td>
+                </tr>
+                <tr>
+                    <td>944</td>
+                    <td>Amputatii traum. cu localizari multiple ale corp</td>
+                </tr>
+                <tr>
+                    <td>945</td>
+                    <td>Alte lez.traum. cu loc. multiple ale corpului</td>
+                </tr>
+                <tr>
+                    <td>946</td>
+                    <td>Leziuni traumatice multiple, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>947</td>
+                    <td>Corp strain in partea externa a ochiului</td>
+                </tr>
+                <tr>
+                    <td>948</td>
+                    <td>Corp strain in ureche</td>
+                </tr>
+                <tr>
+                    <td>949</td>
+                    <td>Corp strain in caile respiratorii</td>
+                </tr>
+                <tr>
+                    <td>950</td>
+                    <td>Corp strain in caile digestive</td>
+                </tr>
+                <tr>
+                    <td>951</td>
+                    <td>Corp strain in caile genito-urinare</td>
+                </tr>
+                <tr>
+                    <td>952</td>
+                    <td>Arsura si coroziunea cap., git. si trunchiului</td>
+                </tr>
+                <tr>
+                    <td>953</td>
+                    <td>Arsura si coroziunea umar. si membru superior</td>
+                </tr>
+                <tr>
+                    <td>954</td>
+                    <td>Arsura si coroziunea sold. si membru inferior</td>
+                </tr>
+                <tr>
+                    <td>955</td>
+                    <td>Arsuri si coroziuni limit la ochi,si anexe sale</td>
+                </tr>
+                <tr>
+                    <td>956</td>
+                    <td>Arsuri si coroziuni ale altor organe interne</td>
+                </tr>
+                <tr>
+                    <td>957</td>
+                    <td>Arsuri si coroziuni cu loc multiple ale corpului</td>
+                </tr>
+                <tr>
+                    <td>958</td>
+                    <td>Arsuri si coroziuni ale corp, cu loc.neprecizate</td>
+                </tr>
+                <tr>
+                    <td>959</td>
+                    <td>Arsuri clasate dupa intind lezata a supraf.corp</td>
+                </tr>
+                <tr>
+                    <td>960</td>
+                    <td>Coroz. clasate dupa intind lezata a supraf.corp</td>
+                </tr>
+                <tr>
+                    <td>961</td>
+                    <td>Degeratura superficiala</td>
+                </tr>
+                <tr>
+                    <td>962</td>
+                    <td>Degeratura cu necroza de tesut</td>
+                </tr>
+                <tr>
+                    <td>963</td>
+                    <td>Degeratura corp cu loc.multiple si fara preciz.</td>
+                </tr>
+                <tr>
+                    <td>964</td>
+                    <td>Intox. prin medicamente si substante biologice</td>
+                </tr>
+                <tr>
+                    <td>965</td>
+                    <td>Efectele toxice ale subst. in special nemedicam.</td>
+                </tr>
+                <tr>
+                    <td>966</td>
+                    <td>Efectele radiatiilor, fara precizare</td>
+                </tr>
+                <tr>
+                    <td>967</td>
+                    <td>Efectele caldurii si ale luminii</td>
+                </tr>
+                <tr>
+                    <td>968</td>
+                    <td>Hipotermia</td>
+                </tr>
+                <tr>
+                    <td>969</td>
+                    <td>Efectele presiunii atm. si ale presiunii apei</td>
+                </tr>
+                <tr>
+                    <td>970</td>
+                    <td>Asfixia</td>
+                </tr>
+                <tr>
+                    <td>971</td>
+                    <td>Sindroame datorite unei maltratari</td>
+                </tr>
+                <tr>
+                    <td>972</td>
+                    <td>Efectele altor cauze externe</td>
+                </tr>
+                <tr>
+                    <td>973</td>
+                    <td>Comp ale acte medic de diagn.si trat neclas</td>
+                </tr>
+                <tr>
+                    <td>974</td>
+                    <td>Comp protezelor,implant, grefe cardiace si vasc</td>
+                </tr>
+                <tr>
+                    <td>975</td>
+                    <td>Alte comp ale trat.chirurg,medical,neclas la alt</td>
+                </tr>
+                <tr>
+                    <td>976</td>
+                    <td>Accidente de transport</td>
+                </tr>
+                <tr>
+                    <td>977</td>
+                    <td>Accidente de transport pe apa</td>
+                </tr>
+                <tr>
+                    <td>978</td>
+                    <td>Accidente de transport aerian si de zbor spatial</td>
+                </tr>
+                <tr>
+                    <td>979</td>
+                    <td>Accidente de transport, alte si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>980</td>
+                    <td>Caderi</td>
+                </tr>
+                <tr>
+                    <td>981</td>
+                    <td>Expunerea la forte mecanice</td>
+                </tr>
+                <tr>
+                    <td>982</td>
+                    <td>Inecul si submersia accidentala</td>
+                </tr>
+                <tr>
+                    <td>983</td>
+                    <td>Expun la curent.el.,radiatii,temp., pres extreme</td>
+                </tr>
+                <tr>
+                    <td>984</td>
+                    <td>Expun la fum,foc,flac,si subst. arzande</td>
+                </tr>
+                <tr>
+                    <td>985</td>
+                    <td>Expunerea la fortele naturii</td>
+                </tr>
+                <tr>
+                    <td>986</td>
+                    <td>Intox accid. prin expunere la substante nocive</td>
+                </tr>
+                <tr>
+                    <td>987</td>
+                    <td>Expun accid. la factori, altii si fara precizare</td>
+                </tr>
+                <tr>
+                    <td>988</td>
+                    <td>Leziuni auto-provocate</td>
+                </tr>
+                <tr>
+                    <td>989</td>
+                    <td>Agresiunea</td>
+                </tr>
+                <tr>
+                    <td>990</td>
+                    <td>Evenimente a caror intentie nu este precizata</td>
+                </tr>
+                <tr>
+                    <td>991</td>
+                    <td>Interventia fortei publice in caz de razboi</td>
+                </tr>
+                <tr>
+                    <td>992</td>
+                    <td>Comp.ingrijiri med.si chirurg.,medicam,subst.bio.</td>
+                </tr>
+                <tr>
+                    <td>993</td>
+                    <td>Persoane in contact cu serv.de sanatate pentru diverse investigatii
+                    </td>
+                </tr>
+                <tr>
+                    <td>994</td>
+                    <td>Persoane susceptibile de a fi contaminate de boli transmisibile
+                    </td>
+                </tr>
+                <tr>
+                    <td>995</td>
+                    <td>Persoane ce se adreseaza serv. de san.pt.motive legate de reproductie
+                    </td>
+                </tr>
+                <tr>
+                    <td>996</td>
+                    <td>Recurgere la serv.de sanatate pt.acte medic.specifice si de ingrijire medicale
+                    </td>
+                </tr>
+                <tr>
+                    <td>997</td>
+                    <td>Persoane cu risc de sanatate conditionat de factori socio-economici sau psihosociali
+                    </td>
+                </tr>
+                <tr>
+                    <td>998</td>
+                    <td>Alte motive de recurgere la serviciile de sanatate</td>
+                </tr>
+                <tr>
+                    <td>999</td>
+                    <td>Antecedente personale si familiale putand crea riscuri latente de boala si unele afectiuni cu efetc asupra starii de sanatate</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#search').on('keyup', function (){
+            var filter = $(this).val().toUpperCase();
+            var tr = $("#cod-boli tr");
+            for (var i = 0; i < tr.length; i++) {
+                if ($(tr[i]).text().toUpperCase().indexOf(filter) > -1) {
+                    $(tr[i]).show();
+                } else {
+                    $(tr[i]).hide();
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
